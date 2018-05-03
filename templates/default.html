@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>danso - $title$</title>
+        <link rel="stylesheet" href="/css/solarized.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/">danso</a>
+            </div>
+            <nav>
+                <a href="/">home</a>
+                <a href="/music">music</a>
+                <a href="/hacking">hacking</a>
+                <a href="/contact">contact</a>
+                <a href="/blog">blog</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>$title$</h1>
+            $body$
+        </main>
+
+        <footer>
+            $if(modtime)$
+                last modified $modtime$
+                $endif$ <!-- FIXME make this an else instead ? -->
+            $if(gentime)$
+                generated $gentime$
+            $endif$
+            <br>
+        <a href="/">danso.ca</a> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> license.
+        <br/><br/>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">
+<img alt="Creative Commons License" style="border-width:0" src="/images/cc-by-nc-sa.png" /></a><br />
+
+        </footer>
+    </body>
+</html>

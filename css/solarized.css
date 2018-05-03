@@ -1,0 +1,166 @@
+:root {
+    --solarizeddarkest:  #002b36;
+    --solarizeddarker:   #073642;
+    --solarizeddark:     #586e75;
+    --solarizeddarkish:  #657b83;
+    --solarizedlightish: #839496;
+    --solarizedlight:    #93a1a1;
+    --solarizedlighter:  #eee8d5;
+    --solarizedlightest: #fdf6e3;
+    --solarizedyellow:   #b58900;
+    --solarizedorange:   #cb4b16;
+    --solarizedred:      #dc322f;
+    --solarizedmagenta:  #d33682;
+    --solarizedviolet:   #6c71c4;
+    --solarizedblue:     #268bd2;
+    --solarizedcyan:     #2aa198;
+    --solarizedgreen:    #859900;
+}
+
+html {
+  font-size: 70%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--solarizeddarker);
+  background: var(--solarizedlightest);
+}
+
+header {
+  border-bottom: 0.2rem solid var(--solarizeddarker);
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--solarizeddarker);
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
+  color: var(--solarizedlight);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+article .header {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--solarizeddarker);
+}
+
+.logo a {
+  font-weight: bold;
+  color: var(--solarizeddarker);
+  text-decoration: none;
+}
+
+.postdescription {
+    font-size: 80%;
+    font-style: italic;
+    color: var(--solarizeddarker);
+}
+
+@media (max-width: 319px) {
+  body {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+  header {
+    margin: 4.2rem 0;
+  }
+  nav {
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    margin: 1rem auto 3rem;
+  }
+  .logo a {
+    font-size: 2.4rem;
+  }
+  nav a {
+    display: block;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+  header {
+    margin: 4.2rem 0;
+  }
+  nav {
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    margin: 1rem auto 3rem;
+  }
+  .logo a {
+    font-size: 2.4rem;
+  }
+  nav a {
+    display: inline;
+    margin: 0 0.6rem;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    width: 60rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  header {
+    margin: 0 0 3rem;
+    padding: 1.2rem 0;
+  }
+  nav {
+    margin: 0;
+    text-align: right;
+  }
+  nav a {
+    margin: 0 0 0 1.2rem;
+    display: inline;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo {
+    margin: 0;
+    text-align: left;
+  }
+  .logo a {
+    float: left;
+    font-size: 1.8rem;
+  }
+}
