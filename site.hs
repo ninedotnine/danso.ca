@@ -39,7 +39,6 @@ hakyllRules gentime = do
         route topRoute
         compile $ getResourceBody 
                 >>= loadAndApplyTemplate "templates/default.html" dateCtx
-                >>= relativizeUrls
 
     makeEvents genTimeCtx
 
