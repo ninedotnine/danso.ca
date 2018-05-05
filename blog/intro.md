@@ -2,7 +2,6 @@
 title: danso.ca and this blog
 tags: hacking, haskell, meta
 date: 12018-04-14
-summary: I introduce my new website to the world.
 ---
 
 ### Welcome to my blog and website

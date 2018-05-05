@@ -2,7 +2,9 @@
     $for(posts)$
         <li>
             <a href="$url$">$title$</a> - $date$
-            <p class=postdescription>$summary$</p>
+            $if(summary)$
+                <p class=postdescription>$summary$</p>
+            $endif$
         </li>
     $endfor$
 </ul>
