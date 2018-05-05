@@ -1,6 +1,6 @@
 ---
 title: danso.ca and this blog
-tags: hacking, meta
+tags: hacking, haskell, meta
 date: 12018-04-14
 summary: I introduce my new website to the world.
 ---
@@ -13,7 +13,7 @@ I intend to keep this website updated with all my current events and projects. F
 
 While the main purpose of the website is to showcase my work in music and technology, I also intend to start writing more often. I shared a blog several years ago with a group of friends, but this will be entirely my own thoughts and words. 
 
-I hope to regularly add new posts focusing on the intersection of math and music. Knowing myself, I probably won't be able to resist the occasional post about ethics or politics as well.
+I hope to regularly add new posts focusing on the intersection of math and music. I'll also post about ongoing or completed projects and possibly write tech guides. Knowing myself, I probably won't be able to resist the occasional post about ethics or politics as well.
 
 The source code to this website is publicly viewable on [GitLab](https://gitlab.com/danso/danso.ca) and the text is available under a [Creative Commons](http://creativecommons.org/) license.
 
