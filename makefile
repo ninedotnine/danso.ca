@@ -21,7 +21,7 @@ rebuild: clean compile
 	./site rebuild
 
 check: build
-	./site check
+	./site check --internal-links
 
 deploy: build check
 	rm -rf /var/www/danso.ca/*
