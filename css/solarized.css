@@ -1,34 +1,15 @@
-:root {
-    --solarizeddarkest:  #002b36;
-    --solarizeddarker:   #073642;
-    --solarizeddark:     #586e75;
-    --solarizeddarkish:  #657b83;
-    --solarizedlightish: #839496;
-    --solarizedlight:    #93a1a1;
-    --solarizedlighter:  #eee8d5;
-    --solarizedlightest: #fdf6e3;
-    --solarizedyellow:   #b58900;
-    --solarizedorange:   #cb4b16;
-    --solarizedred:      #dc322f;
-    --solarizedmagenta:  #d33682;
-    --solarizedviolet:   #6c71c4;
-    --solarizedblue:     #268bd2;
-    --solarizedcyan:     #2aa198;
-    --solarizedgreen:    #859900;
-}
-
 html {
   font-size: 70%;
 }
 
 body {
   font-size: 1.6rem;
-  color: var(--solarizeddarker);
-  background: var(--solarizedlightest);
+  color: #073642;
+  background: #fdf6e3;
 }
 
 header {
-  border-bottom: 0.2rem solid var(--solarizeddarker);
+  border-bottom: 0.2rem solid #073642;
 }
 
 nav {
@@ -38,7 +19,7 @@ nav {
 nav a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--solarizeddarker);
+  color: #073642;
   text-decoration: none;
   text-transform: lowercase;
 }
@@ -47,7 +28,7 @@ footer {
   margin-top: 3rem;
   padding: 1.2rem 0;
   font-size: 1.2rem;
-  color: var(--solarizedlight);
+  color: #93a1a1;
 }
 
 h1 {
@@ -61,19 +42,19 @@ h2 {
 article .header {
   font-size: 1.4rem;
   font-style: italic;
-  color: var(--solarizeddarker);
+  color: #073642;
 }
 
 .logo a {
   font-weight: bold;
-  color: var(--solarizeddarker);
+  color: #073642;
   text-decoration: none;
 }
 
 .postdescription {
     font-size: 80%;
     font-style: italic;
-    color: var(--solarizeddarker);
+    color: #073642;
 }
 
 @media (max-width: 319px) {
