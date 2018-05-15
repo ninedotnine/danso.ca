@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-I am generally best contacted by email. Other ways to keep in touch:
+I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to keep in touch:
 
 * You should follow me via Mastodon: [danso@mastodon.social](https://mastodon.social/@danso).
 * I host my projects on [GitLab](https://gitlab.com/danso) and [GitHub](https://github.com/ninedotnine).
