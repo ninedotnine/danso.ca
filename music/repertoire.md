@@ -7,6 +7,7 @@ title: Repertoire
 * Toccata in G minor, BWV 915
 * English Suite no. 2 in A minor, BWV 807
 * French Suite no. 5 in G major, BWV 816
+* Capriccio on the departure of a beloved brother, BWV 992
 * The Well-Tempered Clavier: 
     * Prelude and Fugue in C major, Volume 1, BWV 846
     * Prelude and Fugue in C minor, Volume 1, BWV 847
