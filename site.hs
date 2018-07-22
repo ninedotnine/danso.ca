@@ -151,7 +151,7 @@ makeBlog genTimeCtx = do
         compile $ do
             posts <- recentFirst =<< loadAll "blog/*"
             let blogCtx = listField "posts" dateCtx (return posts)
-                        <> constField "title" "Blog"
+                        <> constField "title" "Water you thinking about / Aqua penses-tu?"
                         <> genTimeCtx
 
             makeItem ""
