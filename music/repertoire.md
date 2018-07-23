@@ -29,9 +29,10 @@ title: Repertoire
 
 ### Mozart, W. A.
 * Sonata in B-flat major, K. 281
+* Sonata in G major, K. 283
 * Sonata in B-flat major, K. 333
-* Fantasia in D minor, K. 397
 * Sonata in C major, K. 545
+* Fantasia in D minor, K. 397
 
 ### Haydn, Joseph
 * Sonata in E-flat major Hob. XVI/52, L. 62
@@ -126,6 +127,7 @@ title: Repertoire
 
 ### Rachmaninoff, Sergei
 * Étude-tableau op. 33 no. 8
+* Prelude op. 23 no. 6
 
 ### Joplin, Scott
 * Maple Leaf Rag
