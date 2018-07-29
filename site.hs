@@ -80,7 +80,7 @@ hakyllRules gentime = do
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
-
+-------------------------------------------------------------------------------
 makeEvents :: Context String -> Rules ()
 makeEvents genTimeCtx = do
     match "events/*" $ do
@@ -100,11 +100,18 @@ makeEvents genTimeCtx = do
                             <> genTimeCtx
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/events.html" eventCtx
                 >>= loadAndApplyTemplate "templates/eventlist.html" eventCtx
+                >>= loadAndApplyTemplate "templates/events.html" eventCtx
                 >>= loadAndApplyTemplate "templates/default.html" eventCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
+
+    create ["feeds/events.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = dateCtx <> constField "description" "No description."
+            posts <- fmap (take 10) . recentFirst =<< loadAll "events/*"
+            renderAtom eventsFeedConf feedCtx posts
 
 makeBlog :: Context String -> Rules ()
 makeBlog genTimeCtx = do
@@ -160,6 +167,12 @@ makeBlog genTimeCtx = do
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
+    create ["feeds/blog.xml"] $ do
+        route idRoute
+        compile $ do
+            posts <- fmap (take 10) . recentFirst =<< loadAll "blog/*"
+            renderAtom blogFeedConf dateCtx posts
+
 -------------------------------------------------------------------------------
 -- contexts
 dateCtx :: Context String
@@ -201,3 +214,20 @@ cleanIndexUrls = return . fmap (withUrls cleanIndex) where
 --       replacement = const "/"
 
 ------------------------------------------------------------------------------
+blogFeedConf :: FeedConfiguration
+blogFeedConf = FeedConfiguration {
+    feedTitle = "Water you thinking about / Aqua penses-tu?",
+    feedDescription = "Blog of dan soucy, just like the title says.",
+    feedAuthorName = "dan soucy",
+    feedAuthorEmail = "contact@danso.ca",
+    feedRoot = "http://danso.ca"
+}
+
+eventsFeedConf :: FeedConfiguration
+eventsFeedConf = FeedConfiguration {
+    feedTitle = "Events",
+    feedDescription = "Events with dan soucy.",
+    feedAuthorName = "dan soucy",
+    feedAuthorEmail = "contact@danso.ca",
+    feedRoot = "http://danso.ca"
+}
