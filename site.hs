@@ -66,7 +66,6 @@ hakyllRules gentime = do
             >>= relativizeUrls
             >>= cleanIndexUrls
 
-
     match "main/index.html" $ do
         route topRoute
         compile $ do
@@ -87,6 +86,7 @@ makeEvents genTimeCtx = do
         route cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/event.html" dateCtx
+            >>= saveSnapshot "event_content"
             >>= loadAndApplyTemplate "templates/default.html" dateCtx
             >>= relativizeUrls
             >>= cleanIndexUrls
@@ -109,8 +109,8 @@ makeEvents genTimeCtx = do
     create ["feeds/events.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = dateCtx <> constField "description" "No description."
-            posts <- fmap (take 10) . recentFirst =<< loadAll "events/*"
+            let feedCtx = dateCtx <> bodyField "description"
+            posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "events/*" "event_content"
             renderAtom eventsFeedConf feedCtx posts
 
 makeBlog :: Context String -> Rules ()
