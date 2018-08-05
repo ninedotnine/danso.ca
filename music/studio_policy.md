@@ -11,7 +11,7 @@ title: Studio Policy
 
 * If you will be away during a regular lesson time, you should notify me before making that month's payment and I will subtract it from the total.
 
-* Lessons that are missed with short notice (less than 24 hours) will not be made up, except in cases of illness. A student that is ill is not welcome in my studio and should stay home.
+* Lessons that are missed with short notice (less than 24 hours) will not be made up, except in cases of illness. A student who is ill is not welcome in my studio and should stay home.
 
 * I expect regular practice and serious effort from my students. I reserve the right to terminate my relationship with a student based on lack of dedication.
 
@@ -27,6 +27,6 @@ title: Studio Policy
 
 ### What to expect
 
-* I do not, in general, teach music that is under copyright, because I believe this to be unethical. While of course I will not stifle a student with a passion for a certain composition, I will never assign to a student a work that they cannot study or redistribute freely.
+* I do not, in general, teach music that is under copyright (in Canada), because I believe this to be unethical. While of course I will not stifle a student with a passion for a certain composition, I will never assign to a student a work that they cannot study or redistribute freely.
 
 * I do not, in general, teach music of a religious or political nature, because I believe this to be unethical. Some of this music is beautiful, but there is a vast repertoire of great piano music available without it.

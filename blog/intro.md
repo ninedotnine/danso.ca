@@ -31,7 +31,7 @@ Most of the pages are Markdown files, along with the header/footer templates and
 
 The colour scheme is a subset of [Solarized](http://ethanschoonover.com/solarized), because I'm unoriginal and always use the same colours for everything.
 
-I don't use cabal, because frankly I don't understand it. I tried to once, but things just didn't work out between us. I use a plain old makefile to automate my builds.
+I don't use cabal because frankly I don't understand it. I tried to once, but things just didn't work out between us. I use a plain old makefile to automate my builds.
 
 ### Credit
 
