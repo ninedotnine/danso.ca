@@ -10,6 +10,6 @@ title: Hacking
 
 I like to make things. All of my software is [free](https://www.fsf.org) and open-source, and most is hosted on [GitLab](https://gitlab.com/danso) and [GitHub](https://github.com/ninedotnine).
 
-I somehow once earned an undergraduate degree in Computer Science.
+I somehow once earned an undergraduate degree in computer science.
 
 You can read about some of the [projects](/hacking/projects) that I've worked on.
