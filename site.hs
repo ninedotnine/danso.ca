@@ -48,23 +48,17 @@ hakyllRules gentime = do
     match ("main/*.md") $ do
         route $ customRoute ((</> "index.html") . takeBaseName . toFilePath)
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-            >>= relativizeUrls
-            >>= cleanIndexUrls
+            >>= theUsual modTimeCtx
 
     match "music/*" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-            >>= relativizeUrls
-            >>= cleanIndexUrls
+            >>= theUsual modTimeCtx
 
     match "hacking/*" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-            >>= relativizeUrls
-            >>= cleanIndexUrls
+            >>= theUsual modTimeCtx
 
     match "main/index.html" $ do
         route topRoute
@@ -75,9 +69,7 @@ hakyllRules gentime = do
                         <> modTimeCtx
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-                >>= relativizeUrls
-                >>= cleanIndexUrls
+                >>= theUsual modTimeCtx
 
 -------------------------------------------------------------------------------
 makeEvents :: Context String -> Rules ()
@@ -87,9 +79,7 @@ makeEvents genTimeCtx = do
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/event.html" dateCtx
             >>= saveSnapshot "event_content"
-            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-            >>= relativizeUrls
-            >>= cleanIndexUrls
+            >>= theUsual modTimeCtx
 
     create ["events.html"] $ do
         route cleanRoute
@@ -101,9 +91,7 @@ makeEvents genTimeCtx = do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/events.html" eventCtx
-                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
-                >>= relativizeUrls
-                >>= cleanIndexUrls
+                >>= theUsual genTimeCtx
 
     create ["feeds/events.xml"] $ do
         route idRoute
@@ -124,9 +112,7 @@ makeBlog genTimeCtx = do
                     <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/postlist.html" ctx
-                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
-                >>= relativizeUrls
-                >>= cleanIndexUrls
+                >>= theUsual genTimeCtx
 
     create ["blog/topics/index.html"] $ do
         route idRoute
@@ -139,18 +125,14 @@ makeBlog genTimeCtx = do
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/topics.html" topicsCtx
-                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
-                >>= relativizeUrls
-                >>= cleanIndexUrls
+                >>= theUsual genTimeCtx
 
     match "blog/*" $ do
         let postCtx = tagsField "tags" tags <> dateCtx
         route cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" postCtx
-            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
-            >>= relativizeUrls
-            >>= cleanIndexUrls
+            >>= theUsual modTimeCtx
 
     create ["blog.html"] $ do
         route cleanRoute
@@ -162,9 +144,7 @@ makeBlog genTimeCtx = do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
-                >>= relativizeUrls
-                >>= cleanIndexUrls
+                >>= theUsual genTimeCtx
 
     create ["feeds/blog.xml"] $ do
         route idRoute
@@ -197,6 +177,11 @@ cleanRoute = customRoute createIndexRoute where
 
 -------------------------------------------------------------------------------
 -- compilers
+theUsual :: Context String -> Item String -> Compiler (Item String)
+theUsual ctx item = loadAndApplyTemplate "templates/default.html" ctx item
+    >>= relativizeUrls
+    >>= cleanIndexUrls
+
 -- removes index.html from the ends of links
 cleanIndexUrls :: Item String -> Compiler (Item String)
 cleanIndexUrls = return . fmap (withUrls cleanIndex) where
