@@ -38,7 +38,7 @@ hakyllRules gentime = do
     match "main/404.html" $ do
         route topRoute
         compile $ getResourceBody 
-                >>= loadAndApplyTemplate "templates/default.html" dateCtx
+                >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
 
     makeEvents genTimeCtx
 
@@ -55,14 +55,14 @@ hakyllRules gentime = do
     match "music/*" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" dateCtx
+            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
             >>= relativizeUrls
             >>= cleanIndexUrls
 
     match "hacking/*" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" dateCtx
+            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
             >>= relativizeUrls
             >>= cleanIndexUrls
 
@@ -75,7 +75,7 @@ hakyllRules gentime = do
                         <> modTimeCtx
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
@@ -87,7 +87,7 @@ makeEvents genTimeCtx = do
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/event.html" dateCtx
             >>= saveSnapshot "event_content"
-            >>= loadAndApplyTemplate "templates/default.html" dateCtx
+            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
             >>= relativizeUrls
             >>= cleanIndexUrls
 
@@ -102,14 +102,14 @@ makeEvents genTimeCtx = do
             makeItem ""
                 >>= loadAndApplyTemplate "templates/eventlist.html" eventCtx
                 >>= loadAndApplyTemplate "templates/events.html" eventCtx
-                >>= loadAndApplyTemplate "templates/default.html" eventCtx
+                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
     create ["feeds/events.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = dateCtx <> bodyField "description"
+            let feedCtx = bodyField "description" <> defaultContext
             posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "events/*" "event_content"
             renderAtom eventsFeedConf feedCtx posts
 
@@ -125,7 +125,7 @@ makeBlog genTimeCtx = do
                     <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/postlist.html" ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
@@ -140,7 +140,7 @@ makeBlog genTimeCtx = do
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/topics.html" topicsCtx
-                >>= loadAndApplyTemplate "templates/default.html" topicsCtx
+                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
@@ -149,7 +149,7 @@ makeBlog genTimeCtx = do
         route cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
             >>= relativizeUrls
             >>= cleanIndexUrls
 
@@ -163,7 +163,7 @@ makeBlog genTimeCtx = do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= loadAndApplyTemplate "templates/default.html" blogCtx
+                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
@@ -171,12 +171,12 @@ makeBlog genTimeCtx = do
         route idRoute
         compile $ do
             posts <- fmap (take 10) . recentFirst =<< loadAll "blog/*"
-            renderAtom blogFeedConf dateCtx posts
+            renderAtom blogFeedConf defaultContext posts
 
 -------------------------------------------------------------------------------
 -- contexts
 dateCtx :: Context String
-dateCtx = dateField "date" dateFormat <> modTimeCtx
+dateCtx = dateField "cleandate" dateFormat <> defaultContext
 
 modTimeCtx :: Context String
 modTimeCtx = field "modtime" func <> defaultContext where
