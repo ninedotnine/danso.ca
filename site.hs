@@ -26,7 +26,7 @@ hakyllRules gentime = do
     match "images/*" $ 
         route idRoute >> compile copyFileCompiler
 
-    match ("media/*" .||. "media/*/*") $ 
+    match "media/**" $
         route idRoute >> compile copyFileCompiler
 
     match "css/*" $ 
