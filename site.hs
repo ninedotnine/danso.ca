@@ -100,7 +100,6 @@ makeEvents genTimeCtx = do
                             <> genTimeCtx
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/eventlist.html" eventCtx
                 >>= loadAndApplyTemplate "templates/events.html" eventCtx
                 >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
                 >>= relativizeUrls
