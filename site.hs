@@ -191,12 +191,6 @@ cleanIndexUrls = return . fmap (withUrls cleanIndex) where
         | otherwise            = url
       where idx = "index.html"
 
--- cleanIndexHtmls :: Item String -> Compiler (Item String)
--- cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
---     where
---       pattern = "/index.html"
---       replacement = const "/"
-
 ------------------------------------------------------------------------------
 blogFeedConf :: FeedConfiguration
 blogFeedConf = FeedConfiguration {
