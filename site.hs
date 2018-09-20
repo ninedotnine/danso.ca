@@ -198,7 +198,7 @@ blogFeedConf = FeedConfiguration {
     feedDescription = "Blog of dan soucy, just like the title says.",
     feedAuthorName = "dan soucy",
     feedAuthorEmail = "contact@danso.ca",
-    feedRoot = "http://danso.ca"
+    feedRoot = "https://danso.ca"
 }
 
 eventsFeedConf :: FeedConfiguration
@@ -207,5 +207,5 @@ eventsFeedConf = FeedConfiguration {
     feedDescription = "Events with dan soucy.",
     feedAuthorName = "dan soucy",
     feedAuthorEmail = "contact@danso.ca",
-    feedRoot = "http://danso.ca"
+    feedRoot = "https://danso.ca"
 }
