@@ -135,8 +135,8 @@ makeBlog genTimeCtx = do
             topicsList <- renderTagList tags
             topicsCloud <- renderTagCloud 90 150 tags
             let topicsCtx = constField "topicscloud" topicsCloud
-                            <> constField "title" "Topics" 
-                            <> constField "topicslist" topicsList 
+                            <> constField "title" "Topics"
+                            <> constField "topicslist" topicsList
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/topics.html" topicsCtx
