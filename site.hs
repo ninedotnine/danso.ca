@@ -69,7 +69,7 @@ hakyllRules gentime = do
                         <> modTimeCtx
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= theUsual modTimeCtx
+                >>= theUsual indexCtx
 
 -------------------------------------------------------------------------------
 makeEvents :: Context String -> Rules ()
