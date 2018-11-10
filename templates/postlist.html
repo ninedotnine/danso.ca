@@ -4,8 +4,8 @@
     $for(posts)$
         <li>
             <a href="$url$">$title$</a> - $cleandate$
-            $if(summary)$
-                <p class=postsummary>$summary$</p>
+            $if(description)$
+                <p class=postdescription>$description$</p>
             $endif$
         </li>
     $endfor$
