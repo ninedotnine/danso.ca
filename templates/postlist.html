@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="/css/blog.css" />
+
 <ul>
     $for(posts)$
         <li>
             <a href="$url$">$title$</a> - $cleandate$
             $if(summary)$
-                <p class=postdescription>$summary$</p>
+                <p class=postsummary>$summary$</p>
             $endif$
         </li>
     $endfor$

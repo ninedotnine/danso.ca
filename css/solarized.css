@@ -52,12 +52,6 @@ article .header {
   text-decoration: none;
 }
 
-.postdescription {
-    font-size: 80%;
-    font-style: italic;
-    color: #073642;
-}
-
 @media (max-width: 319px) {
   body {
     width: 90%;
