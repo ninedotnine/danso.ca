@@ -77,8 +77,8 @@ makeEvents genTimeCtx = do
     match "events/*" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/event.html" dateCtx
             >>= saveSnapshot "event_content"
+            >>= loadAndApplyTemplate "templates/event.html" dateCtx
             >>= theUsual modTimeCtx
 
     create ["events.html"] $ do
