@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="/css/events.css" />
 <article>
 <div class="eventdate">
-    $cleandate$
+    $if(posteddate)$
+        posted on $posteddate$
+    $else$
+        $cleandate$
+    $endif$
 </div>
 <section>
     $body$
