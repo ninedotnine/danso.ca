@@ -1,14 +1,10 @@
 <link rel="stylesheet" href="/css/blog.css" />
-<article>
-    <div class="header">
-        posted on $cleandate$
-    </div>
-    <div class="taglist">
-    $if(tags)$
-        topics: $tags$
-    $endif$
-    </div>
-    <section>
-        $body$
-    </section>
-</article>
+<div class="header">
+    posted on $cleandate$
+</div>
+<div class="taglist">
+$if(tags)$
+    topics: $tags$
+$endif$
+</div>
+$body$
