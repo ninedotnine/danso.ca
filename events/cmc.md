@@ -2,6 +2,7 @@
 title: Canadian Music Competition, National Audition
 date: 12018-06-01
 published: 12018-05-31
+eventcleandate: June 1, 12018
 ---
 
 ### Details

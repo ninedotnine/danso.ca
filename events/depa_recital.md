@@ -2,6 +2,7 @@
 title: D.E.P.A. Recital
 date: 12018-05-11
 published: 12018-05-03
+eventcleandate: May 11, 12018
 ---
 
 ### Details

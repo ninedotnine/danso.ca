@@ -2,6 +2,7 @@
 title: In Concert for Cambodia
 date: 12018-05-13
 published: 12018-05-13
+eventcleandate: May 13, 12018
 ---
 
 ### Details
