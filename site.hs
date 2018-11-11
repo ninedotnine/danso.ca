@@ -92,7 +92,7 @@ makeEvents genTimeCtx = do
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/events.html" eventCtx
-                >>= theUsual (genTimeCtx <> eventsFeedCtx)
+                >>= theUsual eventCtx
 
     create ["feeds/events.xml"] $ do
         route idRoute
@@ -114,7 +114,7 @@ makeBlog genTimeCtx = do
                         <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/postlist.html" blogCtx
-                >>= theUsual (genTimeCtx <> blogFeedCtx)
+                >>= theUsual blogCtx
 
     create ["blog/topics/index.html"] $ do
         route idRoute
@@ -128,14 +128,14 @@ makeBlog genTimeCtx = do
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/topics.html" topicsCtx
-                >>= theUsual (genTimeCtx <> blogFeedCtx)
+                >>= theUsual topicsCtx
 
     match "blog/*" $ do
         let postCtx = tagsField "tags" tags <> dateCtx <> blogFeedCtx
         route cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" postCtx
-            >>= theUsual (modTimeCtx <> blogFeedCtx)
+            >>= theUsual postCtx
 
     create ["blog.html"] $ do
         route cleanRoute
@@ -147,7 +147,7 @@ makeBlog genTimeCtx = do
                         <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= theUsual (genTimeCtx <> blogFeedCtx)
+                >>= theUsual blogCtx
 
     create ["feeds/blog.xml"] $ do
         route idRoute
