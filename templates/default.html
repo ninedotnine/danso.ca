@@ -28,12 +28,8 @@
             $body$
         </main>
         <footer>
-            $if(modtime)$
-                last modified $modtime$
-                $endif$ <!-- FIXME make this an else instead ? -->
-            $if(gentime)$
-                generated $gentime$
-            $endif$
+            $if(gentime)$ generated $gentime$ $endif$
+            $if(modtime)$ last modified $modtime$ $endif$
             <br>
         <a href="/">danso.ca</a> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> license.
         <br/><br/>
