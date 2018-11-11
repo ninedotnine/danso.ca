@@ -1,7 +1,7 @@
 ---
 title: Canadian Music Competition, National Final
 date: 12018-06-16
-posteddate: 12018-06-09
+published: 12018-06-09
 ---
 
 ### Details
