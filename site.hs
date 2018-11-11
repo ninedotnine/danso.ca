@@ -67,6 +67,7 @@ hakyllRules gentime = do
             let indexCtx = constField "title" "Home" 
                         <> listField "events" dateCtx (return events)
                         <> modTimeCtx
+                        <> eventsFeedCtx
             getResourceBody
                 >>= applyAsTemplate indexCtx
                 >>= theUsual indexCtx
@@ -79,7 +80,7 @@ makeEvents genTimeCtx = do
         compile $ pandocCompiler
             >>= saveSnapshot "event_content"
             >>= loadAndApplyTemplate "templates/event.html" dateCtx
-            >>= theUsual modTimeCtx
+            >>= theUsual (eventsFeedCtx <> modTimeCtx)
 
     create ["events.html"] $ do
         route cleanRoute
@@ -87,11 +88,11 @@ makeEvents genTimeCtx = do
             events <- recentFirst =<< loadAll "events/*"
             let eventCtx = listField "events" dateCtx (return events)
                             <> constField "title" "Events"
+                            <> eventsFeedCtx
                             <> genTimeCtx
-
             makeItem ""
                 >>= loadAndApplyTemplate "templates/events.html" eventCtx
-                >>= theUsual genTimeCtx
+                >>= theUsual (genTimeCtx <> eventsFeedCtx)
 
     create ["feeds/events.xml"] $ do
         route idRoute
@@ -107,12 +108,13 @@ makeBlog genTimeCtx = do
         route cleanRoute
         compile $ do
             posts <- recentFirst =<< loadAll pattern
-            let ctx = constField "title" ("Posts tagged \"" ++ tag ++ "\"")
-                    <> listField "posts" dateCtx (return posts)
-                    <> genTimeCtx
+            let blogCtx = constField "title" ("Posts tagged \"" ++ tag ++ "\"")
+                        <> listField "posts" dateCtx (return posts)
+                        <> blogFeedCtx
+                        <> genTimeCtx
             makeItem ""
-                >>= loadAndApplyTemplate "templates/postlist.html" ctx
-                >>= theUsual genTimeCtx
+                >>= loadAndApplyTemplate "templates/postlist.html" blogCtx
+                >>= theUsual (genTimeCtx <> blogFeedCtx)
 
     create ["blog/topics/index.html"] $ do
         route idRoute
@@ -122,17 +124,18 @@ makeBlog genTimeCtx = do
             let topicsCtx = constField "topicscloud" topicsCloud
                             <> constField "title" "Topics"
                             <> constField "topicslist" topicsList
+                            <> blogFeedCtx
                             <> genTimeCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/topics.html" topicsCtx
-                >>= theUsual genTimeCtx
+                >>= theUsual (genTimeCtx <> blogFeedCtx)
 
     match "blog/*" $ do
-        let postCtx = tagsField "tags" tags <> dateCtx
+        let postCtx = tagsField "tags" tags <> dateCtx <> blogFeedCtx
         route cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" postCtx
-            >>= theUsual modTimeCtx
+            >>= theUsual (modTimeCtx <> blogFeedCtx)
 
     create ["blog.html"] $ do
         route cleanRoute
@@ -140,11 +143,11 @@ makeBlog genTimeCtx = do
             posts <- recentFirst =<< loadAll "blog/*"
             let blogCtx = listField "posts" dateCtx (return posts)
                         <> constField "title" "Water you thinking about / Aqua penses-tu?"
+                        <> blogFeedCtx
                         <> genTimeCtx
-
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= theUsual genTimeCtx
+                >>= theUsual (genTimeCtx <> blogFeedCtx)
 
     create ["feeds/blog.xml"] $ do
         route idRoute
@@ -163,6 +166,14 @@ modTimeCtx = field "modtime" func <> defaultContext where
     func item = do
         modtime <- getItemModificationTime (itemIdentifier item)
         return $ formatTime defaultTimeLocale timeFormat modtime
+
+blogFeedCtx :: Context String
+blogFeedCtx = constField "feed" "blog"
+            <> constField "feedtitle" (feedTitle blogFeedConf)
+
+eventsFeedCtx :: Context String
+eventsFeedCtx = constField "feed" "events"
+                <> constField "feedtitle" (feedTitle eventsFeedConf)
 
 -------------------------------------------------------------------------------
 -- routes
