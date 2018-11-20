@@ -53,7 +53,7 @@ Notes can only be out of tune *with respect to something else*, which is most of
 
 Imagine that a friend told you that their car was blue, but upon seeing it, it happens to be closer to what you would call blue-green.[^blue] That's the kind of disagreement we're talking about here.
 
-Similar logic applies in the case of works played in keys other than their original. I've never met a person with absolute pitch who would prefer to hear a performance of a Schubert song in their original key than in a different key that was better-suited to the performer. If they know the song, then they will know that it's in a different key, and that's completely fine. *Absolutely* nobody is judging you for singing in a key that better fits your range - in fact, they might judge you more harshly if you *didn't*.
+Similar logic applies in the case of works played in keys other than their original. I've never met a person with absolute pitch who would prefer to hear a performance of a Schubert song in their original key than in a different key that was better-suited to the performer. If they know the song, then they will know that it's in a different key, and that's completely fine. *Absolutely* nobody is judging you for singing in a key that better fits your range --- in fact, they might judge you more harshly if you *didn't*.
 
 I would like to point out that I've never known anybody *with* strong absolute pitch to say they find these things troublesome. As far as I know, these are only things that other people suggest are common occurrences. It should perhaps come as no surprise that those with strong absolute pitch tend to have a better intuitive understanding of what it means than those who don't. 
 
