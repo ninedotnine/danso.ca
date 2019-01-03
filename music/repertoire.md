@@ -113,6 +113,7 @@ title: Repertoire
 * Dragon Fly, op. 13 no. 1
 
 ### Scriabin, Alexander
+* Piano Sonata no. 2 op. 19
 * Piano Sonata no. 5 op. 53
 * Fantaisie, op. 28
 * Étude op. 42 no. 5
