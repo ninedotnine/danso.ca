@@ -2,11 +2,12 @@
 title: Hacking
 ---
 
-> HACKER
->
-> *noun. A person who enjoys learning the details of computer systems and how to stretch their capabilities.*
+HACKER:
 
--[Jargon File](http://jargon-file.org/archive/jargon-1.5.0.dos.txt)
+>
+> noun. A hacker is someone who enjoys playful cleverness.
+
+-- Richard Stallman, [*Free Software, Free Society*](https://shop.fsf.org/books-docs/free-software-free-society-selected-essays-richard-m-stallman-3rd-edition) 
 
 I like to make things. All of my software is [free](https://www.fsf.org) and open-source, and most is hosted on [GitLab](https://gitlab.com/danso) and [GitHub](https://github.com/ninedotnine).
 
