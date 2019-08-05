@@ -4,8 +4,7 @@ title: Hacking
 
 HACKER:
 
->
-> noun. *A hacker is someone who enjoys playful cleverness.*
+: noun. *A hacker is someone who enjoys playful cleverness.*
 
 -- Richard Stallman, [*Free Software, Free Society*](https://shop.fsf.org/books-docs/free-software-free-society-selected-essays-richard-m-stallman-3rd-edition) 
 
