@@ -7,7 +7,7 @@ import Hakyll
 
 
 timeFormat :: String
-timeFormat = "1%Y-%m-%d at %H:%M UTC"
+timeFormat = "%Y-%m-%d at %H:%M UTC"
 dateFormat :: String
 dateFormat = "%B %e, %Y"
 -------------------------------------------------------------------------------
