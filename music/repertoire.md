@@ -72,7 +72,7 @@ title: Repertoire
 * Waltzes op. 64, no. 1 and 2
 
 ### Liszt, Franz
-* Hungarian Rhapsody no. 18
+* Hungarian Rhapsody no. 19
 * Deux études de concert: Waldesrauschen
 * Grandes études de Paganini, "La campanella"
 * 12 Transcendental études, no. 3
