@@ -117,6 +117,7 @@ title: Repertoire
 * Piano Sonata no. 5 op. 53
 * Fantaisie, op. 28
 * Étude op. 42 no. 5
+* Étude op. 8 no. 12
 * Two Impromptus op. 12
 
 ### Berg, Alban
