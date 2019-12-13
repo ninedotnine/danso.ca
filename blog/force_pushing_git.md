@@ -2,7 +2,7 @@
 title: How to stop yourself from force-pushing to `master`
 tags: internet, programming
 description: Be a better team player with git hooks.
-published: 12019-09-30
+published: 12019-08-30
 ---
 
 If you're like me, you probably use git, and if you're like me, you probably use git badly. Years of working on projects by myself have ingrained in me a few habits that don't transfer well to team environments -- perhaps most notably, pushing (even force-pushing) to the master branch.
