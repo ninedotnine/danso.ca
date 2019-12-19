@@ -16,28 +16,28 @@ main = hakyll . hakyllRules =<< getCurrentTime
 
 hakyllRules :: UTCTime -> Rules ()
 hakyllRules gentime = do
-    let genTimeCtx = constField "gentime" timestring <> defaultContext where 
+    let genTimeCtx = constField "gentime" timestring <> defaultContext where
             timestring = formatTime defaultTimeLocale timeFormat gentime
 
     match "templates/*" $
         compile templateBodyCompiler
 --     match "templates/*" (compile templateCompiler) -- what does this do?
 
-    match "images/*" $ 
+    match "images/*" $
         route idRoute >> compile copyFileCompiler
 
     match "media/**" $
         route idRoute >> compile copyFileCompiler
 
-    match "css/*" $ 
+    match "css/*" $
         route idRoute >> compile compressCssCompiler
 
-    match "main/robots.txt" $ 
+    match "main/robots.txt" $
         route topRoute >> compile copyFileCompiler
 
     match "main/404.html" $ do
         route topRoute
-        compile $ getResourceBody 
+        compile $ getResourceBody
                 >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
 
     makeEvents genTimeCtx
@@ -64,7 +64,7 @@ hakyllRules gentime = do
         route topRoute
         compile $ do
             events <- recentFirst =<< loadAll "events/*"
-            let indexCtx = constField "title" "Home" 
+            let indexCtx = constField "title" "Home"
                         <> listField "events" dateCtx (return events)
                         <> modTimeCtx
                         <> eventsFeedCtx
