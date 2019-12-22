@@ -85,6 +85,8 @@ But that doesn't mean there isn't *practical* value in having a label that descr
 
 It is my hope that by reframing the matter in these terms will clarify that absolute pitch is not a unique talent, available to few but inaccessible to most. It is rather a skill that (not quite) all humans have innately and can strengthen with experience. There is very little in life that is more universally understood and appreciated than music. It is not something reserved for gifted elites. 
 
+[//]: # footnotes
+
 [^object]: Or alternative common everyday object of your choice.
 [^wavelengths]: I considered saying a "large range" of wavelengths here, but then I reconsidered and thought maybe "small range" of wavelengths was more appropriate. In fact, as wavelengths range from zero to infinity, the concepts of "small" and "large" are meaningless without context. It is equivalent to asking the question: is 100 a large number or a small one? 
 That said, the spectrum of visible light is *not* infinite. Although it varies slightly by person, according to Wikipedia, light is generally considered visible if it has a wavelength between 400 and 700 nanometres. How many labels you want to cram into this range is entirely your prerogative.

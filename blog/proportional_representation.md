@@ -61,6 +61,8 @@ If you lived in [Elmwood—Transcona](https://en.wikipedia.org/wiki/Elmwood%E2%8
 
 Canada's electoral system is broken. Completely hosed. Disproportionate representation is the problem; proportional representation is the answer.
 
+[//]: # footnotes
+
 [^trudeau]: This sentence is funniest if read in Ron Howard's voice. 
 
 [^legault]: There would be little reason to doubt François Legault, except that many unscrupulous politicians have given them all a bad name.
