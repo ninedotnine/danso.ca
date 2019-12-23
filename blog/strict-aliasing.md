@@ -81,8 +81,8 @@ int main(void) {
 GCC doesn't actually *prevent* me from doing this, but it does alert me that something is amiss:
 
 ```
-example.c: Dans la fonction « main »:
-example.c:4:20: attention: débordement d'entier dans l'expression de type « int » résulte en « -2 » [-Woverflow]
+overblown.c: In function 'main':
+overblown.c:4:20: warning: integer overflow in expression of type 'int' results in '-2' [-Woverflow]
     4 |     return INT_MAX + INT_MAX;
       |                    ^
 ```
