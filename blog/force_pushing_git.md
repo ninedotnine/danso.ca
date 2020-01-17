@@ -24,23 +24,28 @@ I'm not bothered by making bad commits -- in fact, I often do this on purpose to
 hook_name="hooks/$(basename $0)"
 cur_branch=$(git name-rev --name-only --no-undefined --always HEAD)
 push_cmd=$(ps --pid $PPID --format "command=")
+
 protected_branches="^(master|dev|release-*|patch-*)"
+forceful_flags="force|delete|-f"
+affirmative="yes|y|Y"
 
 # putting regexes in quotes makes them fail, because bash ¯\_(ツ)_/¯
 if [[ "$cur_branch" =~ $protected_branches ]]; then
-    if [[ "$push_cmd" =~ force|delete|-f ]]; then
+    if [[ "$push_cmd" =~ $forceful_flags ]]; then
         echo -e "${hook_name}: don't force-push to $cur_branch"
         exit 1
     else
         echo -ne "${hook_name}: are you aware that you are on branch ${cur_branch}? "
-        read yes < /dev/tty
-        if [[ ! "$yes" =~ yes|y|Y ]]; then
+        read confirmation < /dev/tty
+        if [[ ! "$confirmation" =~ $affirmative ]]; then
             exit 2
         fi
     fi
 fi
 exit 0
 ```
+
+You can find the latest version of this file in my [dotfiles repository](https://github.com/ninedotnine/dotfiles/blob/master/git_hooks/pre-push).
 
 ### Explanation
 
@@ -52,7 +57,7 @@ The code is pretty short and straightforward, but there are a few things worth e
 
 #### Reading from stdin
 
-Bash hooks are not intended to run interactively. This is a problem if you are trying to write a confirmation ("are you sure?") program.
+Git hooks are not intended to run interactively. This is a problem if you are trying to write a confirmation ("are you sure?") program.
 
 To circumvent this, read directly from `/dev/tty`.
 
