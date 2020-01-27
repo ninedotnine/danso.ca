@@ -2,22 +2,22 @@ FLAGS = -Wall -dynamic -no-keep-o-files -no-keep-hi-files
 FILES = site.hs
 OUT_EXE = site
 
-default: clean compile
+default: build
 
 clean:
 	rm -f $(OUT_EXE)
 	rm -rf _cache _site
 
-compile:
+compile: clean
 	ghc $(FLAGS) --make -o $(OUT_EXE) $(FILES)
 
-watch: clean compile 
+watch: compile
 	./site watch
 
-build: clean compile
+build: compile
 	./site build
 
-rebuild: clean compile
+rebuild: compile
 	./site rebuild
 
 check: build
