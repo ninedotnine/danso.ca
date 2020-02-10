@@ -167,6 +167,8 @@ title: Repertoire
 ### Concerto repertoire
 * Bach, J. S.
     * Concerto in D minor, BWV 1052
+* Grieg, Edvard:
+    Piano Concerto in A minor
 * Liszt, Franz
     * Piano Concerto no. 1
 * Prokofiev, Sergei
