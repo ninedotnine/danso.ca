@@ -1,3 +1,4 @@
+SHELL = /bin/sh
 FLAGS = -Wall -dynamic -no-keep-o-files -no-keep-hi-files
 FILES = site.hs
 OUT_EXE = site
@@ -8,20 +9,20 @@ clean:
 	rm -f $(OUT_EXE)
 	rm -rf _cache _site
 
-compile: clean
+$(OUT_EXE): $(FILES)
 	ghc $(FLAGS) --make -o $(OUT_EXE) $(FILES)
 
-watch: compile
-	./site watch
+watch: $(OUT_EXE)
+	./$(OUT_EXE) watch
 
-build: compile
-	./site build
+build: $(OUT_EXE)
+	./$(OUT_EXE) build
 
-rebuild: compile
-	./site rebuild
+rebuild: $(OUT_EXE)
+	./$(OUT_EXE) rebuild
 
 check: build
-	./site check --internal-links
+	./$(OUT_EXE) check --internal-links
 
 deploy: build check
 	rm -rf /var/www/danso.ca/*
@@ -30,3 +31,5 @@ deploy: build check
 renewcert:
 	@echo "you will need dansohost:dan's password for this."
 	sudo certbot renew
+
+.PHONY: clean build watch check deploy renewcert
