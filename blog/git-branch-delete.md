@@ -15,7 +15,9 @@ What does this mean?
 
 When creating a git repository using `git init`, git will create a default branch for you.[^init] Traditionally, this branch is called "master", so git creates this branch and you can begin staging and committing files.
 
-Should you find this name distasteful, you can change the name of the branch at any time. The git invocation to do so is `git branch --move master whatever`.
+Should you find this name distasteful, you can change the name of the branch at any time. The git invocation to do so is
+
+`git branch --move master whatever`
 
 As of this newest release, git can do this for you. To set the default branch name to `main` for all repos your user creates, you will want to edit the so-called *global* git configuration:
 
