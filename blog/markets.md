@@ -19,7 +19,7 @@ So market economies, all things considered, have merit.
 
 However, most economists will also acknowledge the existence of _market failures_, where the hypthetical merits of unregulated markets do not emerge in real-world scenarios.[^dissenters]
 
-# A Tale of Two Cities
+### A Tale of Two Cities
 
 Residents of Ottawa would like a quick way to travel to Montreal. A savvy businessperson observes this, secures funding from investors, and begins to build a highway connecting them. They start a new company (Adequate Construction Co., or ACC) and are eventually able to recoup the building costs and pay maintainance costs by charging users a toll to use it.
 
@@ -45,7 +45,7 @@ Drivers barely notice a difference between one road and another. Maybe the new r
 
 What is obviously, undeniably noticeable is that, when driving on the new road, they look out their window to see another road just like it on their left and _another_ on their right. How did this happen?
 
-# Sometimes, markets don't work
+### Sometimes, markets don't work
 
 In this example, the individuals involved in building the roads are not to be blamed for building multiple roads. If it had not been them, it would have been others. At fault is the _system_. Society collectively decided to build three roads parallel to each other by agreeing to a system that encourages (even forces) competition.
 
