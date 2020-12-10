@@ -154,7 +154,7 @@ makeBlog genTimeCtx = do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots "blog/*" "blog_content"
-            let blog_feed_ctx = bodyField "description" <> defaultContext
+            let blog_feed_ctx = bodyField "content" <> defaultContext
             renderAtomWithTemplates atomTemplate atomItemTemplate blogFeedConf blog_feed_ctx posts
 
 -------------------------------------------------------------------------------
