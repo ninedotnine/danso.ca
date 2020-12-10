@@ -5,4 +5,7 @@
     <published>$published$</published>
     <updated>$updated$</updated>
     <summary type="html"><![CDATA[$description$]]></summary>
+    $if(content)$
+    <content type="html"><![CDATA[$content$]]></content>
+    $endif$
 </entry>
