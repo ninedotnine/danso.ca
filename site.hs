@@ -97,7 +97,7 @@ makeEvents genTimeCtx = do
         route idRoute
         compile $ do
             let feedCtx = bodyField "description" <> defaultContext
-            posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "events/*" "event_content"
+            posts <- recentFirst =<< loadAllSnapshots "events/*" "event_content"
             renderAtom eventsFeedConf feedCtx posts
 
 makeBlog :: Context String -> Rules ()
@@ -151,7 +151,7 @@ makeBlog genTimeCtx = do
     create ["feeds/blog.xml"] $ do
         route idRoute
         compile $ do
-            posts <- fmap (take 10) . recentFirst =<< loadAll "blog/*"
+            posts <- recentFirst =<< loadAll "blog/*"
             renderAtom blogFeedConf defaultContext posts
 
 -------------------------------------------------------------------------------
