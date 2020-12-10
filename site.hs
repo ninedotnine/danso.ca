@@ -133,6 +133,7 @@ makeBlog genTimeCtx = do
         let postCtx = tagsField "tags" tags <> dateCtx <> blogFeedCtx
         route cleanRoute
         compile $ pandocCompiler
+            >>= saveSnapshot "blog_content"
             >>= loadAndApplyTemplate "templates/post.html" postCtx
             >>= theUsual postCtx
 
@@ -151,8 +152,9 @@ makeBlog genTimeCtx = do
     create ["feeds/blog.xml"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "blog/*"
-            renderAtom blogFeedConf defaultContext posts
+            posts <- recentFirst =<< loadAllSnapshots "blog/*" "blog_content"
+            let blog_feed_ctx = bodyField "description" <> defaultContext
+            renderAtom blogFeedConf blog_feed_ctx posts
 
 -------------------------------------------------------------------------------
 -- contexts
