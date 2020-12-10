@@ -1,6 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Data.List (isSuffixOf)
-import Data.Monoid ((<>))
 import Data.Time (defaultTimeLocale, formatTime, getCurrentTime, UTCTime)
 import System.FilePath.Posix (takeBaseName,takeDirectory,takeFileName,(</>))
 import Hakyll
