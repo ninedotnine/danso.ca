@@ -1,3 +1,4 @@
+{-# LANGUAGE TemplateHaskell   #-}
 {-# LANGUAGE OverloadedStrings #-}
 import Data.List (isSuffixOf)
 import Data.Time (defaultTimeLocale, formatTime, getCurrentTime, UTCTime)
@@ -154,7 +155,7 @@ makeBlog genTimeCtx = do
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots "blog/*" "blog_content"
             let blog_feed_ctx = bodyField "description" <> defaultContext
-            renderAtom blogFeedConf blog_feed_ctx posts
+            renderAtomWithTemplates atomTemplate atomItemTemplate blogFeedConf blog_feed_ctx posts
 
 -------------------------------------------------------------------------------
 -- contexts
@@ -221,3 +222,13 @@ eventsFeedConf = FeedConfiguration {
     feedAuthorEmail = "contact@danso.ca",
     feedRoot = "https://danso.ca"
 }
+
+
+atomTemplate :: Template
+atomTemplate =
+    $(embedTemplate ("templates" </> "atom" </> "atom.xml"))
+
+
+atomItemTemplate :: Template
+atomItemTemplate =
+    $(embedTemplate ("templates" </> "atom" </> "atom-item.xml"))
