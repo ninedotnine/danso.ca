@@ -50,6 +50,17 @@ article .header {
   color: #073642;
 }
 
+pre code {
+  background-color: #eee8d5;
+  border: 1px solid #839496;
+  display: block;
+  padding: 8px;
+}
+
+code {
+  background-color: #eee8d5;
+}
+
 .logo a {
   font-weight: bold;
   color: #073642;
