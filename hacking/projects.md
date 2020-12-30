@@ -2,6 +2,12 @@
 title: Projects
 ---
 
+#### happy-space
+
+[happy-space](/blog/happy-space/) is a command-line calculator for a whitespace-sensitive expression language. It is a demo implementation of a language in which space characters alter the semantics of expressions.
+
+View the code or download it from [GitHub](https://github.com/ninedotnine/happy-space).
+
 #### Under the Weather
 
 As a participant in ConUHacks 2017, I wrote [Under the Weather](https://gitlab.com/danso/under-the-weather) in Python with a partner in under 24 hours. We made a bot that reports the weather in any major city in the world over Mastodon. It uses the excellent [OpenWeatherMap](http://openweathermap.org/) API as well as [Mastodon.py](https://mastodonpy.readthedocs.io/en/latest/).
