@@ -9,9 +9,8 @@
 <ul>
     $for(posts)$
         <li>
-            <a href="$url$">$title$</a>
-            <div class="postdate">$cleandate$</div>
-            <div class=postdescription>
+            <a href="$url$">$title$</a> - <span class="postdate">$cleandate$</span>
+            <p class=postdescription>
                 $if(description)$
                     $description$
                 $endif$
