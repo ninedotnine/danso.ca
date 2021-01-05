@@ -9,10 +9,13 @@
 <ul>
     $for(posts)$
         <li>
-            <a href="$url$">$title$</a> - <span class="postdate">$cleandate$</span>
-            $if(description)$
-                <p class=postdescription>$description$</p>
-            $endif$
+            <a href="$url$">$title$</a>
+            <div class="postdate">$cleandate$</div>
+            <div class=postdescription>
+                $if(description)$
+                    $description$
+                $endif$
+            </p>
         </li>
     $endfor$
 </ul>
