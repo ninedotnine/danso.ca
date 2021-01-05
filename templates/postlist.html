@@ -1,8 +1,15 @@
 <link rel="stylesheet" href="/css/blog.css" />
+
+<style type='text/css'>
+    .postdate {
+        font-size: 90%;
+    }
+</style>
+
 <ul>
     $for(posts)$
         <li>
-            <a href="$url$">$title$</a> - $cleandate$
+            <a href="$url$">$title$</a> - <span class="postdate">$cleandate$</span>
             $if(description)$
                 <p class=postdescription>$description$</p>
             $endif$
