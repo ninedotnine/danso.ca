@@ -146,7 +146,7 @@ Happy-space and its code are made freely available under the terms of the GNU AG
 
 [//]: # footnotes
 
-[^before]: I have written about the [order of operations] before.
+[^before]: I have written about the [order of operations](/blog/order-of-operations/) before.
 
 [^power]: Many programming languages choose to make the exponent operator associate right-to-left. I don't think it's worthwhile to introduce this complexity for only one operation, especially since it's dubious that right-to-left is even preferable.
 
