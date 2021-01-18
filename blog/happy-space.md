@@ -142,7 +142,7 @@ The `happy-space` code isn't beautiful. It's a bit long and redundant in places.
 
 If you want to use this, then you are welcome to download the statically-linked binary from [GitHub](https://github.com/ninedotnine/happy-space/releases) or you can clone the repository and build it yourself. I compile it with GHC 8 on Arch Linux and have made no effort to test it on any other platform.
 
-Happy-space and its code are made freely available under the terms of the GNU AGPL. Bug reports and contributions are welcome.
+`happy-space` and its code are made freely available under the terms of the GNU AGPL. Bug reports and contributions are welcome.
 
 [//]: # footnotes
 
