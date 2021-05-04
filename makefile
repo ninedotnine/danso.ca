@@ -26,8 +26,7 @@ check: build
 
 deploy: build check
 	rm -rf /var/www/danso.ca/*
-	mv _site/* /var/www/danso.ca/
-	rmdir _site
+	cp -r _site/* /var/www/danso.ca/
 
 renewcert:
 	@echo "you will need dansohost:dan's password for this."
