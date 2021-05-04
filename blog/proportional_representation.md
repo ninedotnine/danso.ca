@@ -15,7 +15,7 @@ Concurrently, in British Colombia, the Green Party and the New Democratic Party 
 
 The referendum might have proceeded quietly, however, after a sequence of catastrophes in Ontario and an absurd election result in New Brunswick[^newbrunswick], the country is paying attention.
 
-### What "proportional representation" means
+## What "proportional representation" means
 
 Proportional representation is not a particular method of conducting elections. Proportionality is rather a characteristic of many systems of elections.
 
@@ -31,7 +31,7 @@ STV (single transferable vote) faces a similar trade-off. It works by selecting 
 
 For this reason, one of these systems shouldn't be said to inherently be "more proportional" than the other. They are both systems which guarantee proportionality; how precise this proportionality is depends on the specifics.
 
-### The specifics don't matter
+## The specifics don't matter
 
 Based on the above, you might expect me to demand specific implementation details[^debate] from politicians before I can offer my support for their different proposals for proportional representation.
 
@@ -45,7 +45,7 @@ Anybody who claims to value democracy cannot reasonably oppose proportional repr
 
 A person who opposes proportional representation is a person who supports disproportionate representation. 
 
-### Why this is important
+## Why this is important
 
 A democracy needs its participants to trust the system for it to work. A system that is unfair --- or even appears to be --- will produce a government of dubious legitimacy. Even if we don't like the result, we need to at least be in agreement that the process was fair. An election system that produces unfair results will bring about (fully justified) social unrest.
 

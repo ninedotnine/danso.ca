@@ -9,7 +9,7 @@ This is a tricky little arithmetic problem that has been firing up conversations
 
 It says something about the sorry state of our education system that so many Twitter users believed the answer to be 16. In this post, I will demonstrate conclusively that the correct answer is in fact 1[^fact].
 
-### Method
+## Method
 
 We take our original expression:
 
@@ -29,7 +29,7 @@ $1$
 
 QED.
 
-### Okay, to get $\mathbb{R}$ for a moment[^real]
+## Okay, to get $\mathbb{R}$ for a moment[^real]
 
 Obviously, this was silly. Or was it?
 
@@ -39,7 +39,7 @@ Let me ask you this: how do you read `1/10x`? I find it perfectly reasonable to 
 
 The point of this question is that the notation is deliberately ambiguous. To consider it seriously is somewhat of a waste of time. It is the responsibility of the writer to express their intention unambiguously, and, having failed to do so, the result of `8 ÷ 2(2+2)` is [unspecified](https://en.wikipedia.org/wiki/Unspecified_behavior).[^lamb]
 
-### Understanding *PEMDAS*
+## Understanding *PEMDAS*
 
 There is an actual lesson to be learned here: blindly applying the "rules" of arithmetic order is not the way.
 

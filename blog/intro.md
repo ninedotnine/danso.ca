@@ -5,7 +5,7 @@ description: I made a website.
 published: 12018-04-14
 ---
 
-### Welcome to my blog and website
+## Welcome to my blog and website
 
 I've been an avid Web user for at least a decade, but in all that time, never made a website of my own. Having now been asked multiple times why not, I present the new [danso.ca](https://danso.ca).
 
@@ -17,7 +17,7 @@ I hope to sporadically add new posts focusing on the intersection of math and mu
 
 The source code to this website is publicly viewable on [GitLab](https://gitlab.com/danso/danso.ca) and the text is available under a [Creative Commons](http://creativecommons.org/) license.
 
-### Construction
+## Construction
 
 In the spirit of [free culture](https://en.wikipedia.org/wiki/Free-culture_movement), my first blog post will cover how I made this.
 
@@ -33,7 +33,7 @@ The colour scheme is a subset of [Solarized](http://ethanschoonover.com/solarize
 
 I don't use cabal because frankly I don't understand it. I tried to once, but things just didn't work out between us. I use a plain old makefile to automate my builds.
 
-### Credit
+## Credit
 
 While I was learning to use Hakyll, I benefitted greatly from Javran Cheng's [tutorial](https://javran.github.io/posts/2014-03-01-add-tags-to-your-hakyll-blog.html) on tags. 
 

@@ -11,7 +11,7 @@ This post is not quite a response to that, since (beside being many years late) 
 
 However, the message does still get quoted, too often.
 
-### some context
+## some context
 
 The C language standard is clear:
 
@@ -32,13 +32,13 @@ then your program has no defined behaviour; it is meaningless[^undefined]. A con
 
 Was this a good decision on the part of the C standardisation committee? Arguably not, but that's beside the point. This is C, and if you write C code, then this is a matter that you need to understand, or it will get you sooner or later.[^sooner]
 
-### gcc
+## gcc
 
 One of the most popular ever implementations of the C language is called GCC --- the GNU C Compiler (or GNU Compiler Collection)[^gcc]. GCC is an amazing piece of technology and an absolutely massive body of software depends on it. Not only does it comprehensively and correctly[^correct] implement the C language according to the standard, it does so efficiently and it can even perform optimizations on C code. A trivial optimization would be simplifying expressions, such as `3+4` to `7`; more complex optimizations include memory reuse and reordering instructions. All this, and it is made available *for free* and comes with all the legal protections of a GNU free software license.[^cpp]
 
 The GCC developers agreed that the above example was a particularly subtle C language trap to avoid, and so they introduced a compiler setting --- `-fno-strict-aliasing` --- which instructs the compiler to be gentle and assume that the code might be... mistaken. Its counterpart, `-fstrict-aliasing`, specifically tells GCC that you are confident that you haven't written any such bad code, and that it can use that assumption in making optimizations.
 
-### default settings
+## default settings
 
 Basically, with `-fno-strict-aliasing`, you are advising the compiler that you *might* have written some incorrect code, and to please be defensive with the optimizations it performs regarding aliasing.
 
@@ -48,7 +48,7 @@ However, code that only works with GCC with `-fno-strict-aliasing` is not correc
 
 Many people feel that `-fno-strict-aliasing` ought to be the default setting when compiling with GCC. I have news for those people: *it is*.
 
-### a typical sequence of events
+## a typical sequence of events
 
 C is difficult to write correctly. We do our best, but sometimes mistakes creep in. That's okay: GCC is careful and seems to generally do what we want, even when we fail to express our intent properly. We don't even notice when our code is incorrect, and quickly we come to depend on GCC's clairvoyance.
 
@@ -60,7 +60,7 @@ Uh oh --- somebody failed to read the manual. The program crashed, the clients a
 
 At this point, it is easy to assign blame to the compiler, especially when the aforementioned angry git's message can be cited.
 
-### -fwrapv
+## -fwrapv
 
 Permit me a little detour, for a moment --- I would like to provide another example.
 
@@ -91,7 +91,7 @@ One possible behaviour is that the compiler could define a requirement for what 
 
 GCC, for which "above and beyond" is basically the modus operandi, offers the option to define the semantics of integer overflow to wrap-around using twos-complement. All you need to do is pass `-fwrapv`.[^fwrapv] Thanks GCC!
 
-### the point
+## the point
 
 GCC is not to be blamed[^blame] for the consequences of C's strict aliasing rules --- it does the correct thing in all cases. It correctly implements C, and, by default, even takes extra care when presented with broken code.
 

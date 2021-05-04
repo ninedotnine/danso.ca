@@ -13,7 +13,7 @@ I only want to write `1+2` and see a `3` pop out.
 
 Seeing nothing better, I've been using Python and GHCi for this purpose. They still do *way* more than necessary, but at least they're familiar.
 
-### But that's a mislead 
+## But that's a mislead
 
 I'm sure a good, minimal calculator exists. That's not the point. The point was that I hadn't found one, so I was going to make my own, and it would be better than all the others. It would be simple and intuitive, and would do nothing other than calculate expressions. Most importantly, it would have one very special feature. 
 

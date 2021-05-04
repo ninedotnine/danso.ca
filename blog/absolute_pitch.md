@@ -13,7 +13,7 @@ Maybe the most common belief about absolute pitch is that it is a skill that a p
 
 These are misunderstandings of what absolute pitch means. I am of the opinion that nearly everyone (who is not tone-deaf) has some level of "absolute" pitch. I am further of the opinion that virtually everyone can improve their ability to discern pitches.
 
-### An analogy
+## An analogy
 
 Some of us are colour-blind, but most of us have learned the ability to distinguish "red" from "blue" and both of those from "green". We rarely think about this, but how do we do this? What process goes on in our minds when this happens?
 
@@ -23,7 +23,7 @@ In fact, because wavelengths are continuous, the names we have ascribed to these
 
 People who can easily (even automatically or subconsciously) distinguish "teal" from "cyan" might be said to have "absolute colour". This is the equivalent of music's absolute pitch.
 
-### The test
+## The test
 
 To demonstrate my point, I prescribe a simple test.  
 
@@ -39,13 +39,13 @@ This works in the opposite direction as well. If somebody showed you something i
 
 Being able to put a label to a frequency *without context* is the crux of both absolute pitch and absolute colour. 
 
-### The spectrum of wavelengths is continuous
+## The spectrum of wavelengths is continuous
 
 It's worth pointing out here that, just as wavelengths of visible light are not discrete, neither are musical pitches[^pitches]. It's not as if there is an A wavelength and a B-flat wavelength with nothing in between. As you observe shorter wavelengths, the pitch of the note exhibits a gradual rise (from A to B-flat, in this case). This is why musicians, especially string and wind players, often talk about intonation and notes being slightly too "sharp" or "flat". Many musicians can do this whether they consider themselves to have absolute pitch or not, because even without knowing the particular note, the context of other notes around it is sufficient to tell whether a note is "out of tune".
 
 In a sense, what is considered "absolute" pitch and what isn't is somewhat arbitrary. You are said to have this skill if you can tell apart the 12 tones of the Western scale. But why must there be 12?[^twelve] In a culture where the octave is split into 5 notes instead, we would expect many more people to be deemed to have "absolute" pitch; in a world where the octave contains 42 notes, very few would.
 
-### Absolute-pitch related distress
+## Absolute-pitch related distress
 
 Many have commented to me that they would never want to experience absolute pitch, as they feel it would be too great of an annoyance to hear notes that are "out of tune". I hope that by now you understand that this is not an accurate picture of what absolute pitch is. 
 
@@ -57,7 +57,7 @@ Similar logic applies in the case of works played in keys other than their origi
 
 I would like to point out that I've never known anybody *with* strong absolute pitch to say they find these things troublesome. As far as I know, these are only things that other people suggest are common occurrences. It should perhaps come as no surprise that those with strong absolute pitch tend to have a better intuitive understanding of what it means than those who don't. 
 
-### "Relative" pitch
+## "Relative" pitch
 
 In light of all of the above, I find this controversial[^relative] term meaningless and I discourage its use.
 
@@ -67,7 +67,7 @@ What they might not realize is that what they are really doing here is the exact
 
 Absolute pitch *is* relative pitch, except that the reference note comes from long-term memory.
 
-### Piano tuning
+## Piano tuning
 
 The piano is a special case. It's not unusual for a person to play a single note on the piano and for a listener to hear that the instrument is out of tune.
 
@@ -77,7 +77,7 @@ On the piano, a single key can be out of tune *with itself* because most keys pl
 
 The large majority of instruments do not have this problem, and it is not possible for a note to be out of tune with respect only to itself.[^organ]
 
-### Terminology
+## Terminology
 
 As nearly everyone can tell a "high" note on a piano from a "low" one, with or without context, I like to say that almost everybody has a level of absolute pitch and that it can be improved with practice and exposure. 
 
