@@ -73,7 +73,7 @@ Canada's electoral system is broken. Completely hosed. Disproportionate represen
 
 [^animalkingdom]: If you haven't before seen his [Politics in the Animal Kingdom](https://www.youtube.com/playlist?list=PL7679C7ACE93A5638) series, then you are one of today's [lucky 10000](https://www.xkcd.com/1053/).
 
-[^germany]: Germany uses an interesting method whereby it determines the number of party list seats by how many are necessity to reach a certain level of proportionality after the first results are in, essentially working in the other direction.
+[^germany]: Germany uses an interesting method whereby it determines the number of party list seats by how many are necessary to reach a certain level of proportionality after the first results are in, essentially working in the other direction.
 
 [^ruralurban]: In fact, the rural-urban on the ballot in the referendum is not exactly the same rural-urban proposed by FairVote. FairVote's idea was to use multi-member ridings in densely-packed regions and single-winner ridings in thinly-populated regions to prevent them from growing too large (geographically). The whole province (or country) would then be wrapped up in a short party list of seats to round it off. On the other hand, on the ballot is a proposal to simply use STV in urban areas and mixed-member in rural areas, with no overlap. How this change came about is not clear to me --- but if you're inclined to believe that this was a deliberate attempt by the sinister NDP government to rig the system in their favour, then you need to be reminded that this system is still a proportional one and thus cannot unfairly help or hurt any party. Besides, Horgan himself has repeatedly said that he prefers mixed-member over rural-urban.
 
