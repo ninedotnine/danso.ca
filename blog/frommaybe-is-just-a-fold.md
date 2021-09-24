@@ -8,7 +8,7 @@ warning: This post assumes a basic familiarity with the Haskell programming lang
 
 `fromMaybe` is a useful function. `Maybe` is not guaranteed to hold a value, but you can always get one by providing a default to fallback on:
 
-```
+```haskell
 fromMaybe :: a -> Maybe a -> a
 fromMaybe dfault m_x = case m_x of
     Just x -> x
@@ -26,13 +26,13 @@ ghci> fromMaybe "default" Nothing
 
 It's a bit wordy. If I am working with `Maybe`-heavy code, I sometimes alias this function to the operator `//`.[^tradition]
 
-```
+```haskell
 x // y = fromMaybe y x
 ```
 
 or the point-free style:
 
-```
+```haskell
 (//) = flip fromMaybe
 ```
 And now:
@@ -52,7 +52,7 @@ So concise!
 
 Well today I was converting some `Maybe` code to use `Either ErrorCode`. This is not difficult --- the strong type system makes it a pretty mechanical process. I replaced `fromMaybe` with this definition of `fromEitherE`[^fromright]: 
 
-```
+```haskell
 fromEitherE :: a -> Either e a -> a
 fromEitherE dfault e_x = case e_x of
     Right x -> x
@@ -61,7 +61,7 @@ fromEitherE dfault e_x = case e_x of
 
 Normally this would entail replacing the calls to `fromMaybe` all over the place, but since I had been using the `//` alias everywhere, that was all I needed to change:
 
-```
+```haskell
 (//) = flip fromEitherE
 ```
 
@@ -78,7 +78,7 @@ We get the `Right` value if there is one, and if not, ignore the error code and 
 
 Sure, this works, but somehow I am dissatisfied. I expected to find a polymorphic solution that can handle both cases cleanly. After all, look at the similarities in their types:
 
-```
+```haskell
 fromMaybe   :: a -> Maybe    a -> a
 fromEitherE :: a -> Either e a -> a
 ```
@@ -89,7 +89,7 @@ I wondered whether there were any other functors which exhibit the same pattern.
 
 We can imagine extracting the first element of a list, or using a fallback if the list is empty![^head]
 
-```
+```haskell
 fromList :: a -> [a] -> a
 fromList dfault l = case l of
     first:rest -> first
@@ -113,7 +113,7 @@ It is in this form that a solution becomes the most clear. We are reducing a lis
 
 A `fold`, in the Lisp tradition, is a function which takes a combining function, a starting value, and a list. It uses the function and starting value to walk through the list, accumulating as it goes along.
 
-```
+```haskell
 fold :: (a -> a -> a) -> a -> [a] -> a
 fold f start list = recurse list
     where
@@ -129,7 +129,7 @@ ghci> fold (+) 0 [1,2,3,4,5]
 
 We could use `fold` to implement our `fromList` function --- we just need a function which always returns its first argument!
 
-```
+```haskell
 const :: a -> b -> a
 const x y = x
 ```
@@ -172,7 +172,7 @@ ghci> foldr (+) 2 (Just 2)
 
 It's true! We can fold both `Maybe`s and `Either a`s. This suggests a polymorphic solution to our puzzle:
 
-```
+```haskell
 (//) :: Foldable f => f a -> a -> a
 (//) = flip (foldr const)
 ```
@@ -196,7 +196,7 @@ One more thing.
 
 We can avoid `(//)` on such types by defining our own sub-class of `Foldable`:
 
-```
+```haskell
 class Foldable f => Optional f where
     (//) :: f a -> a -> a
     (//) = flip (foldr const)
