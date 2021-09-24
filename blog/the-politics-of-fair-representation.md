@@ -83,6 +83,8 @@ Maybe the system was designed specifically to perpetuate itself. Or maybe it evo
 
 Either way, I don't know that there is any path toward a fair election system. Maybe via a minority government?
 
+*With thanks to [rkallos](https://rkallos.com/) who read an earlier draft of this post.*
+
 [//]: # footnotes
 
 [^amandasimard]: [Amanda Simard](https://en.wikipedia.org/wiki/Amanda_Simard) eventually joined the province's Liberal Party.
