@@ -36,3 +36,7 @@
 .warning-text {
     margin-left: 20px;
 }
+
+code {
+    overflow-x: auto;
+}
