@@ -1,6 +1,7 @@
 {-# LANGUAGE TemplateHaskell   #-}
 {-# LANGUAGE OverloadedStrings #-}
 import Data.List (isSuffixOf)
+import Data.Maybe (fromMaybe)
 import Data.Time (defaultTimeLocale, formatTime, getCurrentTime, UTCTime)
 import System.FilePath.Posix (takeBaseName,takeDirectory,takeFileName,(</>))
 import Hakyll
@@ -97,7 +98,7 @@ makeEvents genTimeCtx = do
     create ["feeds/events.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = bodyField "description" <> defaultContext
+            let feedCtx = bodyField "description" <> gregorian_ctx <> defaultContext
             posts <- recentFirst =<< loadAllSnapshots "events/*" "event_content"
             renderAtom eventsFeedConf feedCtx posts
 
@@ -154,7 +155,8 @@ makeBlog genTimeCtx = do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots "blog/*" "blog_content"
-            let blog_feed_ctx = bodyField "content" <> defaultContext
+            let blog_feed_ctx =
+                    bodyField "content" <> gregorian_ctx <> defaultContext
             renderAtomWithTemplates atomTemplate atomItemTemplate blogFeedConf blog_feed_ctx posts
 
 -------------------------------------------------------------------------------
@@ -176,6 +178,15 @@ blogFeedCtx = constField "feed" "blog"
 eventsFeedCtx :: Context String
 eventsFeedCtx = constField "feed" "events"
                 <> constField "feedtitle" (feedTitle eventsFeedConf)
+
+gregorian_ctx :: Context a
+gregorian_ctx = field "updated" good <> field "published" good
+  where
+    good :: Item a -> Compiler String
+    good item = do
+        metadata <- getMetadata (itemIdentifier item)
+        let publish_date = (drop 1) <$> (lookupString "published" metadata)
+        pure $ fromMaybe "1970-01-01" publish_date <> "T00:00:00Z"
 
 -------------------------------------------------------------------------------
 -- routes
