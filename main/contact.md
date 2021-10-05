@@ -8,7 +8,7 @@ I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to
 * I host my projects on [GitLab](https://gitlab.com/danso) and [GitHub](https://github.com/ninedotnine).
 * I like to call my friends using [Tox](https://tox.chat). If we're not already contacts, you will need to ask me for my Tox ID.
 * I regularly read [Lobsters](https://lobste.rs/) and can be [contacted there](https://lobste.rs/u/danso).
-* IRC users will often find me idling on Freenode as danso.
+* IRC users will often find me idling on [libera.chat](https://libera.chat/) as danso.
 
 Historical:
 
