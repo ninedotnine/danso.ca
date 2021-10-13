@@ -120,7 +120,7 @@ No major party's platform makes reference specifically to aging or sleep; howeve
 
 * the Conservative Party "will invest $5 billion over the next five years" to programs including "Pharmaceutical research and production", without stating how much of that funding will go toward medicine. The word "research" by itself is used many times throughout the party's platform, but usually in the context of reducing regulation and almost always presenting Canada's interest in opposition to to the rest of the world instead of working to cooperate.
 * the Liberal Party's platform contains a lengthy section called "Innovation, Science, and Research" but it is relatively light on details. Among their specific promises are to "Reform the Scientific Research and Experimental Development Program to reduce red tape and the need for consultants, better align eligible expenses to today's innovation and R&D and make the program more generous for [...] companies". International cooperation is not mentioned.
-* the NDP platform's coverage of the topic is shorter even less detailed, promising vaguely to "work with universities and health professionals to make sure that public research on critical health issues continues to flourish".
+* the NDP platform's coverage of the topic is shorter and even less detailed, promising vaguely to "work with universities and health professionals to make sure that public research on critical health issues continues to flourish".
 * the Green Party's platform has the section "Scientific Innovation" which promises to "Increase funding for the granting councils to $2.3 billion", explicitly including the Canadian Institutes for Health Research as one of several.
 
 ## antimicrobial resistance
