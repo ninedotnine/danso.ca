@@ -3,3 +3,4 @@ _site
 site
 junk_drawer
 quotations
+templates/post.html

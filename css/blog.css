@@ -40,3 +40,39 @@
 code {
     overflow-x: auto;
 }
+
+.webring .articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.webring .title {
+  margin: 0;
+}
+
+.webring .article {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #eee8d5;
+  min-width: 10rem;
+}
+
+.webring .summary {
+  font-size: 1rem;
+  flex: 1 1 0;
+}
+
+.webring .date {
+  font-size: 1.0rem;
+  /* flex: 1 1 0; */
+}
+
+.webring .attribution {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #586e75;
+}
