@@ -65,7 +65,7 @@ hakyllRules gentime = do
         route topRoute
         compile $ do
             events <- recentFirst =<< loadAll "events/*"
-            let indexCtx = constField "title" "Home"
+            let indexCtx = constField "title" "home"
                         <> listField "events" dateCtx (return events)
                         <> modTimeCtx
                         <> eventsFeedCtx

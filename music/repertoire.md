@@ -1,5 +1,5 @@
 ---
-title: Repertoire
+title: repertoire
 ---
 
 ### Bach, J. S.

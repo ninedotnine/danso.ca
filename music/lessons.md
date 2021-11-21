@@ -1,5 +1,5 @@
 ---
-title: Lessons
+title: lessons
 ---
 
 I teach piano and music theory lessons privately. [Contact](/contact) me for details.

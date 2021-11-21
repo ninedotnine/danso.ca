@@ -1,5 +1,5 @@
 ---
-title: Studio Policy
+title: studio policy
 ---
 
 

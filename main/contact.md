@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: contact
 ---
 
 I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to keep in touch:

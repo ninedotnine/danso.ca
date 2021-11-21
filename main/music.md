@@ -1,5 +1,5 @@
 ---
-title: Music
+title: music
 ---
 
 This is where my music lives.
