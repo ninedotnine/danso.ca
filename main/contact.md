@@ -13,7 +13,5 @@ I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to
 Historical:
 
 * I've moved my Mastodon activity away from [mastodon.social](https://mastodon.social/@danso), but you may still enjoy my posts there.
-* I previously used [diaspora](https://socializer.cc/people/6fd9f095caa16e45), but my account there is no longer active.
-* I had high hopes for [Friendica](https://libranet.de/profile/danso), but it has few users.
 * I still have a [Twitter](https://twitter.com/ninedotnine) account, but Mastodon is just better.
 * You can recommend me on [LinkedIn](https://www.linkedin.com/in/dan-soucy-25b454101/), or whatever people use LinkedIn for.
