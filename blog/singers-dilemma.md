@@ -2,7 +2,7 @@
 title: Singer's dilemma
 tags: ethics, philosophy
 description: Are other animals like humans, or aren't they?
-published: 21021-11-27
+published: 12021-11-27
 warning: This post alludes to animal abuse.
 ---
 
