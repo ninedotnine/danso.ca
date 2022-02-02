@@ -50,7 +50,7 @@ in the short term
 by exploiting fluctuations in the prices of goods.
 Speculators often check the values of their assets frequently ---
 sometimes daily or even multiple times each day.
-They hope to eek out a bit of cash by opportunistically trading:
+They hope to eke out a bit of cash by opportunistically trading:
 a local price minimum here, a local maximum there.
 
 Assets ripe for speculation can be zero-sum
