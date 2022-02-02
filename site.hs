@@ -39,7 +39,7 @@ hakyllRules gentime = do
     match "main/404.html" $ do
         route topRoute
         compile $ getResourceBody
-                >>= loadAndApplyTemplate "templates/default.html" modTimeCtx
+                >>= loadAndApplyTemplate "templates/default.html" genTimeCtx
 
     makeEvents genTimeCtx
 
@@ -132,7 +132,7 @@ makeBlog genTimeCtx = do
                 >>= theUsual topicsCtx
 
     match "blog/*" $ do
-        let postCtx = tagsField "tags" tags <> dateCtx <> blogFeedCtx
+        let postCtx = tagsField "tags" tags <> dateCtx <> blogFeedCtx <> modTimeCtx
         route cleanRoute
         compile $ pandocCompiler
             >>= saveSnapshot "blog_content"
