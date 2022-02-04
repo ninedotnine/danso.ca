@@ -114,6 +114,7 @@ title: repertoire
 
 ### Scriabin, Alexander
 * Piano Sonata no. 2 op. 19
+* Piano Sonata no. 4 op. 30
 * Piano Sonata no. 5 op. 53
 * Fantaisie, op. 28
 * Étude op. 42 no. 5
@@ -129,6 +130,8 @@ title: repertoire
 
 ### Rachmaninoff, Sergei
 * Étude-tableau op. 33 no. 8
+* Étude-tableau op. 39 no. 4
+* Étude-tableau op. 39 no. 5
 * Prelude op. 23 no. 6
 
 ### Joplin, Scott
