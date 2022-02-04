@@ -16,7 +16,7 @@ between *investment* and *speculation*.
 I will provide definitions here
 which might be slightly unconventional.
 
-## Investment
+## investment
 
 *Investment* means to store value.
 It usually refers to the purchase of capital (or land)
@@ -43,7 +43,7 @@ If you have savings in cash,
 it's usually to your advantage to invest it
 in some other asset.
 
-## Speculation
+## speculation
 
 *Speculation* is the attempt to turn a profit
 in the short term
