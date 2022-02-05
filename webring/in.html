@@ -21,13 +21,13 @@ $endif$
 $body$
 
 <section class="webring">
-  <h4>more from the friends of danso:</h4>
+  <h2>more from the friends of danso:</h2>
   <section class="articles">
     {{range .Articles}}
     <div class="article">
-      <h5 class="title">
+      <h3 class="title">
         <a href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
-      </h5>
+      </h3>
       <small class="date">{{.Date | datef "January 2"}}</small>
       <p class="summary">{{.Summary}}</p>
       <small class="source">
