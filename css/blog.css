@@ -41,6 +41,10 @@ code {
     overflow-x: auto;
 }
 
+pre .sourceCode {
+    overflow: auto;
+}
+
 .webring h2 {
   font-weight: normal;
   font-size: 1em;
