@@ -4,16 +4,7 @@ FILES = site.hs
 OUT_EXE = site
 
 WEBRING = templates/post.html
-RING_FEEDS = \
-	-s https://blog.antoyo.xyz/atom.xml 				\
-	-s https://rkallos.com/feeds/all.atom.xml 			\
-	-s https://vfoley.xyz/index.xml 					\
-	-s https://www.heyheatheritsmeagain.com/feed.xml 	\
-	-s https://heatherbooker.github.io/blog/feed.xml 	\
-	-s https://text.causal.agency/feed.atom 			\
-	-s https://carolxiong.com/feed						\
-	-s https://danielquinn.org/blog/rss/
-
+RING_FEEDS = $(file < webring/feeds.txt)
 
 default: build
 
@@ -44,8 +35,8 @@ renewcert:
 	@echo "you will need dansohost:dan's password for this."
 	sudo certbot renew
 
-$(WEBRING): webring/in.html
-	openring $(RING_FEEDS) < webring/in.html > $(WEBRING)
+$(WEBRING): webring/in.html webring/feeds.txt
+	openring < webring/in.html > $(WEBRING) $(RING_FEEDS)
 
 force_webring: $(WEBRING)
 	$(MAKE) --always-make $(WEBRING)

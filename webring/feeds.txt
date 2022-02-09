@@ -1,0 +1,10 @@
+\
+    -s https://blog.antoyo.xyz/atom.xml                             \
+    -s https://rkallos.com/feeds/all.atom.xml                       \
+    -s https://vfoley.xyz/index.xml                                 \
+    -s https://www.heyheatheritsmeagain.com/feed.xml                \
+    -s https://heatherbooker.github.io/blog/feed.xml                \
+    -s https://text.causal.agency/feed.atom                         \
+    -s https://carolxiong.com/feed                                  \
+    -s https://danielquinn.org/blog/rss/                            \
+
