@@ -11,7 +11,8 @@ RING_FEEDS = \
 	-s https://www.heyheatheritsmeagain.com/feed.xml 	\
 	-s https://heatherbooker.github.io/blog/feed.xml 	\
 	-s https://text.causal.agency/feed.atom 			\
-	-s https://carolxiong.com/feed
+	-s https://carolxiong.com/feed						\
+	-s https://danielquinn.org/blog/rss/
 
 
 default: build
