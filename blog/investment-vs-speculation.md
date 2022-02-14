@@ -2,7 +2,7 @@
 title: investment vs speculation
 tags: economics, finance
 description: presenting two definitions from my dictionary
-published: 21022-01-30
+published: 12022-01-30
 ---
 
 I often feel that,
