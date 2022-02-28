@@ -112,8 +112,7 @@ for revising an earlier draft of this post.*
 
     `Void` is a type with no values (an empty set),
     but it still has kind `Type`.
-    It is not populated,
-    but is still a proper type.
+    It is a proper type that is not populated.
 
 [^angles]: spelled with angle brackets in many languages, as in `List<Integer>`
 
