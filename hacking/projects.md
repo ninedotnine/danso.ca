@@ -2,6 +2,10 @@
 title: projects
 ---
 
+#### mads
+
+[mads](https://gitlab.com/danso/mads) (*Mutt Alias Danabase Server*) is a server designed to be used with [mutt](http://mutt.org/) for managing an email contact database.
+
 #### happy-space
 
 [happy-space](/blog/happy-space/) is a command-line calculator for a whitespace-sensitive expression language. It is a demo implementation of a language in which space characters alter the semantics of expressions.
