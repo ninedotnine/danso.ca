@@ -2,9 +2,9 @@
 title: projects
 ---
 
-#### mads
+#### madm
 
-[mads](https://gitlab.com/danso/mads) (*Mutt Alias Danabase Server*) is a server designed to be used with [mutt](http://mutt.org/) for managing an email contact database.
+[madm](https://gitlab.com/danso/madm) (*Mutt Alias Danabase Manager*) is a server designed to be used with [mutt](http://mutt.org/) for managing an email contact database.
 
 #### happy-space
 
