@@ -19,7 +19,7 @@ title: studio policy
 
 * For practice, access to a piano is a necessity. For many students, an electric piano (with weight-sensitive keys) can be a suitable alternative to an acoustic piano.
 
-* A metronome is a requirement. An electric metronome is preferred. Although computer programs and mechanical metronomes are not as accurate as a electric metronomes, they can be used in a pinch.
+* A metronome is a requirement. An electronic metronome is preferred. Although computer programs and mechanical metronomes are not as accurate as a electronic metronomes, they can be used in a pinch.
 
 * I do not require students to purchase expensive volumes of music. For students who can afford it, it is a great option, but not a necessity. The music that I teach will be made available freely if requested. I do, however, require that my students keep their music well-organized. I don't want my students working with loose sheets.
 
