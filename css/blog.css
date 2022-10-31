@@ -18,6 +18,10 @@
     font-size: 66%;
 }
 
+article .postdate {
+    font-size: 66%;
+}
+
 .warning {
     font-size: 90%;
     border: solid 2px;
