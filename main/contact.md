@@ -15,4 +15,4 @@ Historical:
 * I still use Fosstodon to share software things: [@danso@fosstodon.org](https://fosstodon.org/@danso).
 * I've moved my Mastodon activity away from [mastodon.social](https://mastodon.social/@danso), but you may still enjoy my posts there.
 * I still have a [Twitter](https://twitter.com/ninedotnine) account, but the Fediverse is just better.
-* You can solicit me on [LinkedIn](https://www.linkedin.com/in/dan-soucy-25b454101/), or whatever people use LinkedIn for.
+* You can solicit me on [LinkedIn](https://www.linkedin.com/in/dansoucy/), or whatever people use LinkedIn for.
