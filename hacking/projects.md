@@ -2,6 +2,12 @@
 title: projects
 ---
 
+#### Dragon Scales
+
+[Dragon Scales](https://danso.ca/dragon-scales)
+is a web app for generating random musical scales.
+Take the boredom out of practicing!
+
 #### madm
 
 [madm](https://gitlab.com/danso/madm) (*Mutt Alias Danabase Manager*) is a server designed to be used with [mutt](http://mutt.org/) for managing an email contact database.
