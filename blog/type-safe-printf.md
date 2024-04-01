@@ -7,7 +7,7 @@ published: 12021-11-08
 
 Years ago, on a distant website, Lennart Augustsson [responded to a question](https://stackoverflow.com/questions/7828072/how-does-haskell-printf-work) about how `printf` can work in Haskell, and whether it is type-safe:
 
-> You can only get a type safe printf using dependent types. 
+> You can only get a type safe printf using dependent types.
 
 > --- augustss
 
@@ -71,7 +71,7 @@ One of the features of `printf` is that the caller can adjust how the values are
 Not to appear incomplete, we demonstrate how to left-pad a string to a minimum width. Add another data constructor to our `FmtSpecifier` type:
 
 ```haskell
--- data FmtSpecifier = ... 
+-- data FmtSpecifier = ...
                   | FmtPaddedFmt Int Char FmtSpecifier
 ```
 
@@ -97,7 +97,7 @@ ghci> printf [FmtPaddedFmt 8 '0' (FmtInt 1729)]
 
 ## the many looks of floating-point numbers
 
-Somebody who wanted to add all the formatting features of decimal numbers (showing the `+` sign, using scientific notation, and so on) might begin with a record type encapsulating all our needs[^bool-blindness]:  
+Somebody who wanted to add all the formatting features of decimal numbers (showing the `+` sign, using scientific notation, and so on) might begin with a record type encapsulating all our needs[^bool-blindness]:
 
 ```haskell
 data FmtFloatQualifiers = FmtFloatQualifiers {
@@ -108,10 +108,10 @@ data FmtFloatQualifiers = FmtFloatQualifiers {
     }
 ```
 
-And then, just as above: 
+And then, just as above:
 
 ```haskell
--- data FmtSpecifier = ... 
+-- data FmtSpecifier = ...
                   | FmtQualFloat FmtFloatQualifiers Double
 ```
 

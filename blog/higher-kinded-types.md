@@ -12,7 +12,7 @@ Okay, let me take a step back:
 ## proper types
 
 *Values* have *types*.
-Some typical types are `Integer`, `Bool`, and `String`. 
+Some typical types are `Integer`, `Bool`, and `String`.
 Values of type `Integer` include `0`, `1`, `42`.
 
 Just as values can be grouped into types,
@@ -52,7 +52,7 @@ they are functions
 whose domains are pairs of types
 and whose codomains are types.
 In other words, they have kind `(Type,Type) -> Type`.
-[^functions] 
+[^functions]
 
 There are no values of type `HashMap`,
 nor any of type `HashMap(String)`,
@@ -82,11 +82,11 @@ Examples include [Foldable], [Traversable], [Functor], and [Monad].
 
 ---
 
-Kinds and first-order types 
-can help us understand type-classes (or generics) 
+Kinds and first-order types
+can help us understand type-classes (or generics)
 as a logical extension of the type system.
 
-Higher-kinded types take that a step further 
+Higher-kinded types take that a step further
 and include first-order types in our generics.
 They provide the means to abstract over types
 which themselves abstract over types.
@@ -96,14 +96,14 @@ for revising an earlier draft of this post.*
 
 [//]: # footnotes
 
-[^type]: 
+[^type]:
     If you find it confusing that `Type` is the name
     of the kind containing all the types,
     remember that `Integer` is the name
     of the type containing all the integers!
 
-[^void]: 
-    There's a minor technical difference 
+[^void]:
+    There's a minor technical difference
     between a proper type and a populated type.
     A populated type has kind `Type`
     and there is at least one value of that type.
@@ -128,27 +128,27 @@ for revising an earlier draft of this post.*
 
 [^result]: or `Result`
 
-[^functions]: 
-    Also in this gang is `->` (function) --- 
-    it has kind `(Type,Type) -> Type` 
-    because it requires two types to complete it. 
-    In other words, there are no values of type `->`, 
-    nor are there values of type `String ->` or `-> Integer`. 
+[^functions]:
+    Also in this gang is `->` (function) ---
+    it has kind `(Type,Type) -> Type`
+    because it requires two types to complete it.
+    In other words, there are no values of type `->`,
+    nor are there values of type `String ->` or `-> Integer`.
 
-    There *are* values of type `String -> Integer`, 
-    such as the `length` function 
+    There *are* values of type `String -> Integer`,
+    such as the `length` function
     where `length(s)` is the number of characters in `s`.
 
-    Expressing functions using the `->` syntax 
+    Expressing functions using the `->` syntax
     can hide the fact that `Function` is really just a type
-    of kind `(Type,Type) -> Type` like any other. 
+    of kind `(Type,Type) -> Type` like any other.
     You can think of `String -> Integer`
     as `Function(String,Integer)` if you prefer.
 
-[^currying]: 
-    In functional programming languages, 
+[^currying]:
+    In functional programming languages,
     these kinds are often curried.
-    Instead of `(Type,Type) -> Type`, 
+    Instead of `(Type,Type) -> Type`,
     `HashMap` might have kind `Type -> (Type -> Type)`.
     A value would have type `HashMap(String)(Integer)`.
 

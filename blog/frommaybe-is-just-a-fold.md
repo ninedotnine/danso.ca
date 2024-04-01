@@ -1,7 +1,7 @@
 ---
 title: fromMaybe is Just a fold
 tags: haskell, programming
-description: I realized something neat today 
+description: I realized something neat today
 published: 12021-07-29
 warning: This post assumes a basic familiarity with the Haskell programming language. I will make the examples as accessible as feasible.
 ---
@@ -50,7 +50,7 @@ So concise!
 
 ## enter `Either`
 
-Well today I was converting some `Maybe` code to use `Either ErrorCode`. This is not difficult --- the strong type system makes it a pretty mechanical process. I replaced `fromMaybe` with this definition of `fromEitherE`[^fromright]: 
+Well today I was converting some `Maybe` code to use `Either ErrorCode`. This is not difficult --- the strong type system makes it a pretty mechanical process. I replaced `fromMaybe` with this definition of `fromEitherE`[^fromright]:
 
 ```haskell
 fromEitherE :: a -> Either e a -> a
@@ -83,7 +83,7 @@ fromMaybe   :: a -> Maybe    a -> a
 fromEitherE :: a -> Either e a -> a
 ```
 
-I wondered whether there were any other functors which exhibit the same pattern. 
+I wondered whether there were any other functors which exhibit the same pattern.
 
 ## lists
 
@@ -190,7 +190,7 @@ And there was much rejoicing.
 
 ## but...
 
-One more thing. 
+One more thing.
 
 `(//)` does not make sense for every `Foldable`. `NonEmpty` lists, for example, are guaranteed to hold at least one value. If we want to get the first value out of a `NonEmpty`, we always can! There's no need for an "otherwise" value.
 
@@ -214,7 +214,7 @@ All the code examples above are available on [GitLab](https://gitlab.com/danso/b
 
 [//]: # footnotes
 
-[^tradition]: I would prefer to use `||`, in the style of Unix shell. Unfortunately, Haskell copied `||` from the C tradition and uses it for Boolean disjunction. If you really want to, you could `import Prelude hiding ((||))` and then redefine `(||)` to whatever you like. In this post, we will instead use `//` as a tribute to Perl. 
+[^tradition]: I would prefer to use `||`, in the style of Unix shell. Unfortunately, Haskell copied `||` from the C tradition and uses it for Boolean disjunction. If you really want to, you could `import Prelude hiding ((||))` and then redefine `(||)` to whatever you like. In this post, we will instead use `//` as a tribute to Perl.
 
 [^fromright]: Inconsistently called `fromRight` in the [base](https://hackage.haskell.org/package/base-4.15.0.0/docs/Data-Either.html#v:fromRight) package.
 

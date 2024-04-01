@@ -39,11 +39,11 @@ The imminent B.C. referendum has three different solutions on offer. I've only p
 
 The fact is that the differences between the systems are quite minor compared to the enormous difference that would be made by having a proportional legislature. Any of them would be a huge improvement over simple plurality.
 
-Consider: By definition, an electoral system that guarantees a high degree of proportionality *cannot* unfairly benefit one party over another. If you like top-down party power structures, then mixed-member makes sense, while if you want a bottom-up system with the individual members having more liberties then you would likely prefer the rural-urban[^ruralurban] proposal, which uses STV where feasible. 
+Consider: By definition, an electoral system that guarantees a high degree of proportionality *cannot* unfairly benefit one party over another. If you like top-down party power structures, then mixed-member makes sense, while if you want a bottom-up system with the individual members having more liberties then you would likely prefer the rural-urban[^ruralurban] proposal, which uses STV where feasible.
 
 Anybody who claims to value democracy cannot reasonably oppose proportional representation in principle. The usual definition of "democracy" includes that all votes are equal. This is exactly what proportional representation provides. To the extent that our current system is not proportional, I would argue that it is not democratic.
 
-A person who opposes proportional representation is a person who supports disproportionate representation. 
+A person who opposes proportional representation is a person who supports disproportionate representation.
 
 ## Why this is important
 
@@ -51,7 +51,7 @@ A democracy needs its participants to trust the system for it to work. A system 
 
 In the United States, many analysts attribute Donald Trump's victory to dissatisfaction over the status quo. Voters didn't like any of their options and chose to lash out by electing the person they thought would tear it all down. In the United Kingdom, voters slammed the door on Europe because of the perception that they were being exploited by the establishment. We don't see this kind of political instability in Germany or New Zealand.
 
-Elections in Canada *are not fair*. 
+Elections in Canada *are not fair*.
 
 Your vote might be worth more or less than others' votes based on criteria such as where you live, who lives near you, and whom the parties have decided to nominate in your district.
 
@@ -63,11 +63,11 @@ Canada's electoral system is broken. Completely hosed. Disproportionate represen
 
 [//]: # footnotes
 
-[^trudeau]: This sentence is funniest if read in Ron Howard's voice. 
+[^trudeau]: This sentence is funniest if read in Ron Howard's voice.
 
 [^legault]: There would be little reason to doubt François Legault, except that many unscrupulous politicians have given them all a bad name.
 
-[^newbrunswick]: One party received 37.8% of the votes, the largest share, but won fewer seats in Parliament than another party that only got 31.9% of the votes. 
+[^newbrunswick]: One party received 37.8% of the votes, the largest share, but won fewer seats in Parliament than another party that only got 31.9% of the votes.
 
 [^greyvideo]: [Footnote from STV: Proportional Systems vs STV](https://www.youtube.com/watch?v=8DNtsjB7L_I)
 
@@ -77,4 +77,4 @@ Canada's electoral system is broken. Completely hosed. Disproportionate represen
 
 [^ruralurban]: In fact, the rural-urban on the ballot in the referendum is not exactly the same rural-urban proposed by FairVote. FairVote's idea was to use multi-member ridings in densely-packed regions and single-winner ridings in thinly-populated regions to prevent them from growing too large (geographically). The whole province (or country) would then be wrapped up in a short party list of seats to round it off. On the other hand, on the ballot is a proposal to simply use STV in urban areas and mixed-member in rural areas, with no overlap. How this change came about is not clear to me --- but if you're inclined to believe that this was a deliberate attempt by the sinister NDP government to rig the system in their favour, then you need to be reminded that this system is still a proportional one and thus cannot unfairly help or hurt any party. Besides, Horgan himself has repeatedly said that he prefers mixed-member over rural-urban.
 
-[^debate]: In the "debate" between premier John Horgan and opposition leader Andrew Wilkinson, Wilkinson asked repeatedly how many members the B.C. legislature would have under the various proposals. This was plainly disingenuous: nobody really cares how many members there are. Before the last federal election, the number of seats in the House of Commons was increased from 308 to 338. There was essentially zero opposition to this move; nobody cried out that 338 members was too many to represent all Canadian voters. Horgan didn't have an answer to the question, presumably because he hasn't given any consideration to it, because seriously, *nobody cares* how many members sit in the assembly. 
+[^debate]: In the "debate" between premier John Horgan and opposition leader Andrew Wilkinson, Wilkinson asked repeatedly how many members the B.C. legislature would have under the various proposals. This was plainly disingenuous: nobody really cares how many members there are. Before the last federal election, the number of seats in the House of Commons was increased from 308 to 338. There was essentially zero opposition to this move; nobody cried out that 338 members was too many to represent all Canadian voters. Horgan didn't have an answer to the question, presumably because he hasn't given any consideration to it, because seriously, *nobody cares* how many members sit in the assembly.

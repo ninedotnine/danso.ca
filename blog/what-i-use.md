@@ -1,15 +1,15 @@
 ---
 title: what i use
 tags: hacking
-description: a list of the software that i rely on 
+description: a list of the software that i rely on
 published: 12022-03-21
 ---
 
-Below is a nearly-comprehensive list 
+Below is a nearly-comprehensive list
 of the software that I regularly use,
-including under-the-hood stuff 
+including under-the-hood stuff
 which tends to go under-appreciated.
-[^mytton] 
+[^mytton]
 
 Everything listed is [Free and Open-Source].
 
@@ -34,7 +34,7 @@ Everything listed is [Free and Open-Source].
 
 ## graphics
 
-* display server: [X.Org] 
+* display server: [X.Org]
 * window manager: [dwm]
 * program launcher: [dmenu]
 * status bar: [danwmstatus]
@@ -80,15 +80,15 @@ Everything listed is [Free and Open-Source].
 ## web
 
 * browser: [Firefox], [Chromium]
-* browser extensions: 
+* browser extensions:
     - performance: [NoScript]
-    - privacy: [RandomUA], 
-               [Decentraleyes], 
+    - privacy: [RandomUA],
+               [Decentraleyes],
                [Privacy Badger],
                [HTTPS Everywhere]
-    - advertisements: [uBlock Origin], 
+    - advertisements: [uBlock Origin],
                       [SponsorBlock]
-    - convenience: [Redirector], 
+    - convenience: [Redirector],
                    [Dark Reader]
 
 [Firefox]: https://mozilla.org/en-US/firefox/
@@ -210,6 +210,6 @@ Everything listed is [Free and Open-Source].
 
 [//]: # (footnotes)
 
-[^mytton]: With thanks to [David Mytton](https://davidmytton.blog/iuse/) 
-           for the idea, 
+[^mytton]: With thanks to [David Mytton](https://davidmytton.blog/iuse/)
+           for the idea,
            although I don't believe he did it first.

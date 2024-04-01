@@ -1,11 +1,11 @@
 ---
 title: When markets don't work
 tags: economics
-description: How many roads must a plan knock down? 
+description: How many roads must a plan knock down?
 published: 12020-08-20
 ---
 
-It is widely agreed by economists that markets, in the abstract, are a good thing. 
+It is widely agreed by economists that markets, in the abstract, are a good thing.
 
 Individuals acting in their own interest can be part of a self-improving system. Forcing suppliers to compete with each other on price results in those suppliers constantly brainstorming, researching, experimenting with new methods. The best methods are rewarded and thrive while the less effective methods are discarded.
 
@@ -23,7 +23,7 @@ However, most economists will also acknowledge the existence of _market failures
 
 Residents of Ottawa would like a quick way to travel to Montreal. A savvy businessperson observes this, secures funding from investors, and begins to build a highway connecting them. They start a new company (Adequate Construction Co., or ACC) and are eventually able to recoup the building costs and pay maintainance costs by charging users a toll to use it.
 
-Somebody had an good idea and implemented it. This is a successful business model. They have improved the lives of people using it while making a profit themselves. 
+Somebody had an good idea and implemented it. This is a successful business model. They have improved the lives of people using it while making a profit themselves.
 
 Everyone (for the most part) is better off.
 
@@ -51,7 +51,7 @@ In this example, the individuals involved in building the roads are not to be bl
 
 This is the result of an unregulated market. Competing with each other also means duplicating effort. We did not need to use the land, time, and resources to build three roads to find out which one would be least expensive. It was not --- and never will be --- worth that cost. Even if three parallel roads was acceptable, what if it were ten? Or a thousand?
 
-Sometimes, you just don't need the best or the cheapest road ever built. Sometimes, all you need is _one_ road that is good _enough_ and cheap _enough_.[^naturalmonopoly] 
+Sometimes, you just don't need the best or the cheapest road ever built. Sometimes, all you need is _one_ road that is good _enough_ and cheap _enough_.[^naturalmonopoly]
 
 [//]: # footnotes
 
@@ -65,6 +65,6 @@ Sometimes, you just don't need the best or the cheapest road ever built. Sometim
 
     This is probably true _sometimes_. An example might be the dairy industry in Canada, which is a market that is both failing and also being regulated in entirely the wrong direction.
 
-[^lowblows]: And not just due to [price fixing](https://www.macleans.ca/economy/economicanalysis/14-years-of-loblaws-bread-price-fixing-may-have-cost-you-at-least-400) this time. 
+[^lowblows]: And not just due to [price fixing](https://www.macleans.ca/economy/economicanalysis/14-years-of-loblaws-bread-price-fixing-may-have-cost-you-at-least-400) this time.
 
 [^naturalmonopoly]: For further reading, the phenomenon described in this post is closely related to the concept of [natural monopoly](https://en.wikipedia.org/wiki/Natural_monopoly).

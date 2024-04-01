@@ -7,7 +7,7 @@ published: 12020-12-30
 
 I've never been really satisfied with calculator programs. I can't explain why.
 
-I suppose the standard utility for this (on Unix) is `bc`, but when I once briefly wanted to use it, I discovered it to be basically an entire complex programming language that I didn't understand. 
+I suppose the standard utility for this (on Unix) is `bc`, but when I once briefly wanted to use it, I discovered it to be basically an entire complex programming language that I didn't understand.
 
 I only want to write `1+2` and see a `3` pop out.
 
@@ -15,21 +15,21 @@ Seeing nothing better, I've been using Python and GHCi for this purpose. They st
 
 ## But that's a mislead
 
-I'm sure a good, minimal calculator exists. That's not the point. The point was that I hadn't found one, so I was going to make my own, and it would be better than all the others. It would be simple and intuitive, and would do nothing other than calculate expressions. Most importantly, it would have one very special feature. 
+I'm sure a good, minimal calculator exists. That's not the point. The point was that I hadn't found one, so I was going to make my own, and it would be better than all the others. It would be simple and intuitive, and would do nothing other than calculate expressions. Most importantly, it would have one very special feature.
 
 But before I get ahead of myself:
 
 ## What is an expression?
 
-An arithmetic expression, for my purposes, refers to numbers separated by infix operators, such as `1+2` or `2*x/5`. 
+An arithmetic expression, for my purposes, refers to numbers separated by infix operators, such as `1+2` or `2*x/5`.
 
-Most programming languages do not evaluate expressions the same way we read English, from left to right. There is the notion of *operator precedence* --- some operators need to be evaluated before others.[^before] Operators with highest precedence are evaluated first, and only then left-to-right. As an example, `2+3*5` evaluates to `17` (not `25`) because multiplication is evaluated before addition. 
+Most programming languages do not evaluate expressions the same way we read English, from left to right. There is the notion of *operator precedence* --- some operators need to be evaluated before others.[^before] Operators with highest precedence are evaluated first, and only then left-to-right. As an example, `2+3*5` evaluates to `17` (not `25`) because multiplication is evaluated before addition.
 
 The large majority of programming languages use precedence rules similar to the convention for arithmetic, although there are some that always evaluate from left to right (e. g. Smalltalk) and others where the very concept of operator precedence makes no sense (Lisp-family languages).
 
 The operators I am interested in supporting are addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulo (`%`), and exponentiation (`^`). As usual, I assigned `^` the highest precedence, followed by `*`, `/`, and `%`, with `+` and `-` having the lowest.
 
-Additionally one *prefix* operator for negation would be nice. Since `-` is already in use, I chose `~`. 
+Additionally one *prefix* operator for negation would be nice. Since `-` is already in use, I chose `~`.
 
 There is also the idea of *operator associativity*. Associativity provides the answer the question: should `x-y-z` be understood as `(x-y) - z` or `x - (y-z)`? I chose a simple left-to-right associativity for all operations[^power].
 
