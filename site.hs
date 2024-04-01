@@ -219,8 +219,8 @@ cleanIndexUrls = return . fmap (withUrls cleanIndex) where
 blogFeedConf :: FeedConfiguration
 blogFeedConf = FeedConfiguration {
     feedTitle = "Water you thinking about / Aqua penses-tu?",
-    feedDescription = "Blog of dan soucy, just like the title says.",
-    feedAuthorName = "dan soucy",
+    feedDescription = "Blog of danso, just like the title says.",
+    feedAuthorName = "danso",
     feedAuthorEmail = "contact@danso.ca",
     feedRoot = "https://danso.ca"
 }
@@ -228,8 +228,8 @@ blogFeedConf = FeedConfiguration {
 eventsFeedConf :: FeedConfiguration
 eventsFeedConf = FeedConfiguration {
     feedTitle = "Events",
-    feedDescription = "Events with dan soucy.",
-    feedAuthorName = "dan soucy",
+    feedDescription = "Events with danso.",
+    feedAuthorName = "danso",
     feedAuthorEmail = "contact@danso.ca",
     feedRoot = "https://danso.ca"
 }
