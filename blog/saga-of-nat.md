@@ -36,16 +36,16 @@ but they only ever needed the nunchuks.
 
 One day, Nat took a fairly routine protection job.
 A princess to be escorted safely three towns over,
-with treacherous wilderness separating them.
+with treacherous wilderness separating each.
 
 Everything was going smoothly for most of the journey,
-but near the second town, they were ambushed.
+but near the second town, the group was ambushed.
 A well-known gang of thieves emerged from the trees.
 At least twelve, possibly more.
 They demanded the princess's cart and money.
 
 They were no match for Nat.
-With their nunchuks they easily dispatched one, two, three of them.
+With their nunchuks they easily dispatched one, two, three of their adversaries.
 
 But they were many;
 it quickly became clear that safest for the princess
@@ -53,7 +53,7 @@ would be to depart.
 As the cart accelerated, two gorilla-sized men popped out of the trees,
 blocking the path.
 
-Seeing this, knowing the princess is in danger,
+Seeing this, knowing the princess was in danger,
 Nat skillfully aimed their nunchuks at the two huge goons.
 It could have been one hundred metres or a thousand;
 Nat's connection to their weapon was intimate.
@@ -62,7 +62,7 @@ They threw the nunchaku.
 Both thieves were bonked. Comically, each fell.
 The path was clear, and the cart escaped.
 
-But now, Nat is alone, and worse, unarmed.
+But now, Nat is alone, and worse, disarmed.
 
 ---
 
@@ -79,6 +79,9 @@ as they begin to prepare for the worst.
 The gang is closing in.
 
 There's only one thing left to try.
+
 Nat draws their sword...
+
 they approach their enemies...
+
 and... they slash them.
