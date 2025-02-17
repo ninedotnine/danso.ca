@@ -4,7 +4,7 @@ title: contact
 
 I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to keep in touch:
 
-* Catch me on the fediverse: [@danso@mtl.rocks](https://mtl.rocks/danso).
+* Catch me on the fediverse: [danso@mtl.rocks](https://mtl.rocks/danso).
 * I host my projects on [GitLab](https://gitlab.com/danso).
 * I like to call my friends using [Tox](https://tox.chat). If we're not already contacts, you will need to ask me for my Tox ID.
 * I regularly read [Lobsters](https://lobste.rs/) and can be [contacted there](https://lobste.rs/u/danso).
