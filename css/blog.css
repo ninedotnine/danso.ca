@@ -8,6 +8,12 @@
     color: #073642;
 }
 
+.footnote-back {
+  margin-left: 2px;
+  font-size: 80%;
+  vertical-align: top;
+}
+
 .postdescription {
     font-size: 80%;
     font-style: italic;
