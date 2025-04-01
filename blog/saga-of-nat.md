@@ -1,6 +1,6 @@
 ---
 title: the saga of Nat
-tags: fiction, queer
+tags: april-cools, fiction, queer
 description: the saga of Nat, the non-binary ninja
 published: 12024-04-01
 ---

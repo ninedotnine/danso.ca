@@ -1,6 +1,6 @@
 ---
 title: what i use
-tags: hacking
+tags: hacking, technology
 description: a list of the software that i rely on
 published: 12022-03-21
 ---

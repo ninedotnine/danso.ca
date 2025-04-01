@@ -94,3 +94,20 @@ pre .sourceCode {
   font-size: 0.8rem;
   color: #586e75;
 }
+
+.right-chat, .left-chat {
+  width: 75%;
+  border-radius: 20px;
+  padding: 4px 32px;
+  margin: 16px 0px;
+}
+
+.left-chat {
+  background-color: #eee8d5;
+}
+
+.right-chat {
+  background-color: #eee8d5;
+  margin-right: 0;
+  margin-left: auto;
+}
