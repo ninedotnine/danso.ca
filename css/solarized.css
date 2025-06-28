@@ -67,6 +67,31 @@ code {
   text-decoration: none;
 }
 
+.rfc2119 {
+  font-size: 75%;
+  padding-left: 23%;
+  padding-right: 23%;
+}
+
+.license {
+  display: flex;
+  flex-direction: row;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.license-png {
+  align-content: end;
+}
+
+.display-block {
+  display: block;
+}
+
+.vert-align-bottom {
+  vertical-align: bottom;
+}
+
 @media (max-width: 319px) {
   body {
     width: 90%;
