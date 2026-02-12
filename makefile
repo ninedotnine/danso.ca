@@ -40,6 +40,7 @@ $(WEBRING): webring/in.html webring/feeds.txt
 		$(shell runghc -XGHC2021 webring/parse-feeds.hs < $(RING_FEEDS))
 
 force_webring: $(WEBRING)
+	$(RM) $(WEBRING)
 	$(MAKE) --always-make $(WEBRING)
 
 .PHONY: clean build watch check deploy renewcert force_webring
