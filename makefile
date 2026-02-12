@@ -4,7 +4,7 @@ FILES = site.hs
 OUT_EXE = site
 
 WEBRING = templates/post.html
-RING_FEEDS = $(file < webring/feeds.txt)
+RING_FEEDS = webring/feeds.txt
 
 default: build
 
@@ -36,7 +36,8 @@ renewcert:
 	sudo certbot renew
 
 $(WEBRING): webring/in.html webring/feeds.txt
-	openring < webring/in.html > $(WEBRING) $(RING_FEEDS)
+	openring < webring/in.html > $(WEBRING) \
+		$(shell runghc -XGHC2021 webring/parse-feeds.hs < $(RING_FEEDS))
 
 force_webring: $(WEBRING)
 	$(MAKE) --always-make $(WEBRING)
