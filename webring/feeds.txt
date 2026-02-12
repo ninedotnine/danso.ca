@@ -7,4 +7,5 @@
     -s https://text.causal.agency/feed.atom                         \
     -s https://carolxiong.com/feed                                  \
     -s https://danielquinn.org/blog/rss/                            \
+    -s https://errata.zone/blog/feed.xml                            \
 
