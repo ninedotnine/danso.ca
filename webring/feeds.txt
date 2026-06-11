@@ -1,7 +1,6 @@
 https://blog.antoyo.xyz/atom.xml
 https://rkallos.com/feeds/all.atom.xml
 https://vfoley.xyz/index.xml
-https://www.heyheatheritsmeagain.com/feed.xml
 https://heatherbooker.github.io/blog/feed.xml
 https://text.causal.agency/feed.atom
 https://carolxiong.com/feed
