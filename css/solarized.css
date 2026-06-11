@@ -25,6 +25,10 @@ nav a {
   text-transform: lowercase;
 }
 
+a.email > span:nth-child(3) {
+  display: none;
+}
+
 footer {
   margin-top: 1rem;
   padding: 1.2rem 0;

@@ -2,7 +2,12 @@
 title: contact
 ---
 
-I am generally best contacted [by email](mailto:contact@danso.ca). Other ways to keep in touch:
+I am generally best contacted by email:
+<a class="email" href='mailto&#58;contact&#64;danso.ca'>
+  <span>contact@</span><span>danso</span><span>.fivebyfive</span><span>.ca</span>
+</a>
+
+Other ways to keep in touch:
 
 * Catch me on the fediverse: [danso@mtl.rocks](https://mtl.rocks/danso).
 * I host my projects on [GitLab](https://gitlab.com/danso).

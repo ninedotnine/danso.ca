@@ -7,3 +7,4 @@ https://text.causal.agency/feed.atom
 https://carolxiong.com/feed
 https://danielquinn.org/blog/rss/
 https://errata.zone/blog/feed.xml
+http://abe.berglas.net/feed.xml
